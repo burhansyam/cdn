@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-MEDIA-SEQUENCE:423
+#EXT-X-TARGETDURATION:20
+#EXTINF:10,
+https://github.com/burhansyam/cdn/raw/main/expired.ts
+#EXTINF:10,
+https://github.com/burhansyam/cdn/raw/main/expired.ts
+#EXTINF:10,
+https://github.com/burhansyam/cdn/raw/main/expired.ts
+#EXTINF:10,
+https://github.com/burhansyam/cdn/raw/main/expired.ts
+#EXTINF:10,
+https://github.com/burhansyam/cdn/raw/main/expired.ts
