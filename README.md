@@ -1,0 +1,1 @@
+sekumpulan kode buta!
