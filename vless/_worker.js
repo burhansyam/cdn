@@ -1,11 +1,11 @@
 import { connect } from "cloudflare:sockets";
 
 let isApiReady = false;
-let proxyIP = "47.245.95.160:1443";
+let proxyIP = "35.219.50.99:443";
 let cachedProxyList = [];
 
 async function getProxyList() {
-  const proxyBankUrl = "https://raw.githubusercontent.com/jaka2m/worker/main/output.txt"; // Tetap menggunakan proxyBankUrl
+  const proxyBankUrl = "https://raw.githubusercontent.com/burhansyam/cdn/refs/heads/main/vless/proxy.txt"; // Tetap menggunakan proxyBankUrl
   try {
     const proxyBank = await fetch(proxyBankUrl);
     if (proxyBank.status === 200) {
