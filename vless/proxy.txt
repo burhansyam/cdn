@@ -1,3 +1,14 @@
+8.215.196.18,587,ID,Alibaba
+8.215.196.18,587,ID,Alibaba 
+35.219.15.90,443,ID,Google Cloud 
+35.219.50.99,443,ID,Google Cloud 
+36.95.152.58,12137,ID,PT Telkom Indonesia 
+43.218.77.16,443,ID,Amazoncom 
+43.218.77.16,1443,ID,Amazoncom 
+43.218.77.16,1443,ID,Amazoncom 
+103.6.207.108,8080,ID,PT Pusat Media Indonesia 
+172.232.237.112,2053,ID,Akamai Connected Cloud 
+172.232.239.151,587,ID,Akamai Connected Cloud
 8.215.59.6,443,ID,Alibaba
 103.168.146.169,20132,ID,PT+Herza+Digital+Indonesia
 103.6.207.108,8080,ID,PT+Pusat+Media+Indonesia
