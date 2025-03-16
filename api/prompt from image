@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Prompt Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        select, input[type="file"], input[type="text"] {
+            width: 100%;
+            padding: 0.6rem;
+            margin-bottom: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+
+        select:focus, input[type="file"]:focus, input[type="text"]:focus {
+            border-color: #6c5ce7;
+            outline: none;
+        }
+
+        .button {
+            background: #6c5ce7;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background: #5a4fcf;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .result {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 6px;
+            border: 2px dashed #ddd;
+            text-align: left;
+            position: relative;
+        }
+
+        .result h2 {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 0.8rem;
+        }
+
+        .result pre {
+            background: #333;
+            color: #fff;
+            padding: 0.8rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #6c5ce7;
+            color: #fff;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background: #5a4fcf;
+        }
+
+        .error {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #ffebee;
+            border-radius: 6px;
+            border: 2px dashed #ffcdd2;
+            color: #c62828;
+            text-align: left;
+        }
+
+        .toggle-section {
+            display: none;
+            margin-bottom: 0.8rem;
+        }
+
+        .toggle-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            label {
+                font-size: 0.9rem;
+            }
+
+            select, input[type="file"], input[type="text"] {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+
+            .button {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.8rem;
+            }
+
+            .result h2 {
+                font-size: 1rem;
+            }
+
+            .result pre {
+                font-size: 0.7rem;
+                padding: 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image to Prompt Generator</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <label for="imageSource">Pilih Sumber Gambar:</label>
+            <select name="imageSource" id="imageSource" onchange="toggleSource()">
+                <option value="upload">Upload Gambar</option>
+                <option value="url">Masukkan URL Gambar</option>
+            </select>
+            <br><br>
+
+            <div id="uploadSection" class="toggle-section active">
+                <label for="imageUpload">Upload Gambar:</label>
+                <input type="file" name="imageUpload" id="imageUpload">
+            </div>
+
+            <div id="urlSection" class="toggle-section">
+                <label for="imageUrl">URL Gambar:</label>
+                <input type="text" name="imageUrl" id="imageUrl" placeholder="Masukkan URL gambar">
+            </div>
+            <br>
+
+            <label for="mode">Pilih Mode Output:</label>
+            <select name="mode" id="mode">
+                <option value="1">Flux</option>
+                <option value="2">Midjourney</option>
+                <option value="3">Stable Diffusion</option>
+            </select>
+            <br><br>
+
+            <button type="submit" name="submit" class="button">Generate Prompt</button>
+        </form>
+
+        <?php
+        if (isset($_POST['submit'])) {
+            $mode = $_POST['mode'];
+            $imageSource = $_POST['imageSource'];
+
+            if ($imageSource === "upload" && isset($_FILES['imageUpload'])) {
+                // Handle image upload
+                $imageFile = $_FILES['imageUpload']['tmp_name'];
+                $imageData = file_get_contents($imageFile);
+                $base64Image = base64_encode($imageData);
+
+                // Upload to imgBB
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, 'https://api.imgbb.com/1/upload?expiration=600&key=7652c331ab987138161ad4a6b1654b9c');
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($ch, CURLOPT_POST, 1);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, [
+                    'image' => $base64Image
+                ]);
+
+                $uploadResponse = curl_exec($ch);
+                curl_close($ch);
+
+                $uploadData = json_decode($uploadResponse, true);
+                if (isset($uploadData['data']['url'])) {
+                    $imageUrl = $uploadData['data']['url'];
+                } else {
+                    echo "<div class='error'>Gagal mengunggah gambar. Pastikan file gambar valid.</div>";
+                    exit;
+                }
+
+            } elseif ($imageSource === "url" && !empty($_POST['imageUrl'])) {
+                // Use provided URL
+                $imageUrl = $_POST['imageUrl'];
+            } else {
+                echo "<div class='error'>Silakan pilih sumber gambar yang valid.</div>";
+                exit;
+            }
+
+            // Process image through imageprompt.org
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://imageprompt.org/api/image/proxy?url=" . urlencode($imageUrl));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+
+            $headers = [
+                'Accept: */*',
+                'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
+                'Priority: u=1, i',
+                'Referer: https://imageprompt.org/image-to-prompt',
+                'Sec-Ch-Ua: "Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"',
+                'Sec-Ch-Ua-Mobile: ?0',
+                'Sec-Ch-Ua-Platform: "Windows"',
+                'Sec-Fetch-Dest: empty',
+                'Sec-Fetch-Mode: cors',
+                'Sec-Fetch-Site: same-origin',
+                'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+            ];
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+            $imageData = curl_exec($ch);
+            curl_close($ch);
+
+            if (!$imageData) {
+                echo "<div class='error'>Gagal memproses gambar. Pastikan URL gambar valid.</div>";
+                exit;
+            }
+
+            $base64Image = 'data:image/jpeg;base64,' . base64_encode($imageData);
+
+            // Generate prompt
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, 'https://cors.lintass.my.id/https://imageprompt.org/api/ai/prompts/image');
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
+                'base64Url' => $base64Image,
+                'imageModelId' => $mode,
+                'language' => 'id'
+            ]));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array_merge($headers, ['Content-Type: application/json']));
+
+            $result = curl_exec($ch);
+            if (curl_errno($ch)) {
+                echo "<div class='error'>Error: " . curl_error($ch) . "</div>";
+            } else {
+                $resultData = json_decode($result, true);
+                if (isset($resultData['prompt'])) {
+                    echo "<div class='result'>";
+                    echo "<h2>Hasil Prompt:</h2>";
+                    echo "<button class='copy-button' onclick='copyToClipboard()'>📋</button>";
+                    echo "<pre id='prompt-output'>" . htmlspecialchars($resultData['prompt']) . "</pre>";
+                    echo "</div>";
+                } else {
+                    echo "<div class='error'>Tidak dapat menghasilkan prompt. Pastikan gambar valid.</div>";
+                }
+            }
+            curl_close($ch);
+        }
+        ?>
+    </div>
+
+    <script>
+        function toggleSource() {
+            const source = document.getElementById("imageSource").value;
+            const uploadSection = document.getElementById("uploadSection");
+            const urlSection = document.getElementById("urlSection");
+
+            if (source === "upload") {
+                uploadSection.classList.add("active");
+                urlSection.classList.remove("active");
+            } else {
+                uploadSection.classList.remove("active");
+                urlSection.classList.add("active");
+            }
+        }
+
+        function copyToClipboard() {
+            const promptOutput = document.getElementById("prompt-output");
+            const text = promptOutput.innerText;
+
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    alert("Prompt berhasil disalin!");
+                })
+                .catch(() => {
+                    alert("Gagal menyalin prompt.");
+                });
+        }
+    </script>
+</body>
+</html>
