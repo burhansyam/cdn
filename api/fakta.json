@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "kategori": "Hewan",
+    "fakta": "Kelelawar adalah satu-satunya mamalia yang bisa terbang."
+  },
+  {
+    "id": 2,
+    "kategori": "Hewan",
+    "fakta": "Gurita memiliki tiga jantung dan darah berwarna biru."
+  },
+  {
+    "id": 3,
+    "kategori": "Hewan",
+    "fakta": "Sidik jari koala sangat mirip dengan sidik jari manusia sehingga bisa membingungkan di TKP."
+  },
+  {
+    "id": 4,
+    "kategori": "Hewan",
+    "fakta": "Kuda laut jantan adalah yang hamil dan melahirkan anak-anaknya."
+  },
+  {
+    "id": 5,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satu hari di Venus lebih lama dari satu tahun di Venus."
+  },
+  {
+    "id": 6,
+    "kategori": "Luar Angkasa",
+    "fakta": "Jejak kaki astronaut di Bulan akan tetap ada selama jutaan tahun karena tidak ada atmosfer atau erosi."
+  },
+  {
+    "id": 7,
+    "kategori": "Luar Angkasa",
+    "fakta": "Ada lebih banyak bintang di alam semesta daripada butiran pasir di semua pantai di Bumi."
+  },
+  {
+    "id": 8,
+    "kategori": "Luar Angkasa",
+    "fakta": "Lubang hitam terbentuk dari sisa-sisa bintang masif yang runtuh di bawah gravitasinya sendiri."
+  },
+  {
+    "id": 9,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Rata-rata orang dewasa memiliki sekitar 100.000 helai rambut di kepalanya."
+  },
+  {
+    "id": 10,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Asam lambung di perut manusia cukup kuat untuk melarutkan silet."
+  },
+  {
+    "id": 11,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Manusia berkedip rata-rata 15-20 kali per menit."
+  },
+  {
+    "id": 12,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Tulang paha (femur) adalah tulang terpanjang, terkuat, dan terberat dalam tubuh manusia."
+  },
+  {
+    "id": 13,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon sequoia raksasa adalah organisme hidup terbesar di Bumi berdasarkan volume."
+  },
+  {
+    "id": 14,
+    "kategori": "Tumbuhan",
+    "fakta": "Bunga matahari mengikuti pergerakan matahari sepanjang hari, sebuah fenomena yang disebut heliotropisme."
+  },
+  {
+    "id": 15,
+    "kategori": "Tumbuhan",
+    "fakta": "Ginkgo Biloba adalah salah satu spesies pohon tertua yang masih hidup, sering disebut fosil hidup."
+  },
+  {
+    "id": 16,
+    "kategori": "Tumbuhan",
+    "fakta": "Ada lebih dari 80.000 spesies tanaman yang dapat dimakan di dunia, tetapi manusia hanya mengonsumsi sekitar 30 jenis secara luas."
+  },
+  {
+    "id": 17,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perpustakaan Alexandria kuno di Mesir adalah salah satu perpustakaan terbesar dan paling signifikan di dunia kuno."
+  },
+  {
+    "id": 18,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Tembok Besar Tiongkok dibangun selama berabad-abad, bukan sebagai satu proyek tunggal."
+  },
+  {
+    "id": 19,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Candi Borobudur adalah candi Buddha terbesar di dunia dan dibangun pada abad ke-9."
+  },
+  {
+    "id": 20,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Sumpah Pemuda pada tahun 1928 adalah momen penting dalam gerakan kemerdekaan Indonesia, menyatukan pemuda dari berbagai daerah."
+  },
+  {
+    "id": 21,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Penemuan penisilin oleh Alexander Fleming secara tidak sengaja merevolusi pengobatan infeksi bakteri."
+  },
+  {
+    "id": 22,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Tertawa terbukti dapat meningkatkan sistem kekebalan tubuh dan mengurangi stres."
+  },
+  {
+    "id": 23,
+    "kategori": "Sains Umum",
+    "fakta": "Air adalah satu-satunya zat alami yang ditemukan dalam tiga wujud (padat, cair, gas) pada suhu yang umum di Bumi."
+  },
+  {
+    "id": 24,
+    "kategori": "Sains Umum",
+    "fakta": "Kecepatan cahaya di ruang hampa adalah sekitar 299.792 kilometer per detik."
+  },
+  {
+    "id": 25,
+    "kategori": "Geografi",
+    "fakta": "Sungai Nil adalah sungai terpanjang di dunia, mengalir melalui sebelas negara di Afrika."
+  },
+  {
+    "id": 26,
+    "kategori": "Geografi",
+    "fakta": "Palung Mariana di Samudra Pasifik adalah titik terdalam yang diketahui di lautan Bumi."
+  },
+  {
+    "id": 27,
+    "kategori": "Teknologi",
+    "fakta": "Mesin cetak pertama yang menggunakan huruf bergerak ditemukan oleh Johannes Gutenberg sekitar tahun 1440."
+  },
+  {
+    "id": 28,
+    "kategori": "Teknologi",
+    "fakta": "World Wide Web (WWW) diciptakan oleh Tim Berners-Lee pada tahun 1989."
+  },
+  {
+    "id": 29,
+    "kategori": "Seni & Budaya",
+    "fakta": "Lukisan Mona Lisa karya Leonardo da Vinci disimpan di Museum Louvre, Paris, dan merupakan salah satu karya seni paling terkenal di dunia."
+  },
+  {
+    "id": 30,
+    "kategori": "Seni & Budaya",
+    "fakta": "Wayang Kulit Indonesia telah diakui oleh UNESCO sebagai Karya Agung Warisan Budaya Lisan dan Takbenda Kemanusiaan."
+  },
+  {
+    "id": 31,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Madu adalah satu-satunya makanan yang tidak akan pernah basi."
+  },
+  {
+    "id": 32,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Tomat secara botani adalah buah, bukan sayuran."
+  },
+  {
+    "id": 33,
+    "kategori": "Psikologi",
+    "fakta": "Efek plasebo menunjukkan bahwa keyakinan seseorang terhadap pengobatan dapat mempengaruhi hasil kesehatannya."
+  },
+  {
+    "id": 34,
+    "kategori": "Psikologi",
+    "fakta": "Manusia cenderung lebih mengingat informasi negatif daripada informasi positif, sebuah fenomena yang dikenal sebagai 'negativity bias'."
+  },
+  {
+    "id": 35,
+    "kategori": "Ekonomi",
+    "fakta": "Konsep 'supply and demand' (penawaran dan permintaan) adalah salah satu prinsip dasar dalam ilmu ekonomi."
+  },
+  {
+    "id": 36,
+    "kategori": "Ekonomi",
+    "fakta": "Mata uang pertama dalam bentuk koin diperkirakan berasal dari Lydia (sekarang bagian dari Turki) pada abad ke-7 SM."
+  },
+  {
+    "id": 37,
+    "kategori": "Olahraga",
+    "fakta": "Olimpiade kuno pertama kali diadakan di Olympia, Yunani, pada tahun 776 SM."
+  },
+  {
+    "id": 38,
+    "kategori": "Olahraga",
+    "fakta": "Sepak bola adalah olahraga paling populer di dunia, dengan perkiraan lebih dari 3,5 miliar penggemar."
+  },
+  {
+    "id": 39,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Terumbu karang sering disebut sebagai 'hutan hujan laut' karena keanekaragaman hayatinya yang tinggi."
+  },
+  {
+    "id": 40,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Bahasa dengan jumlah penutur asli terbanyak di dunia adalah Mandarin."
+  },
+  {
+    "id": 41,
+    "kategori": "Hewan",
+    "fakta": "Berang-berang laut sering tidur sambil berpegangan tangan agar tidak terpisah oleh arus."
+  },
+  {
+    "id": 42,
+    "kategori": "Hewan",
+    "fakta": "Lidah jerapah bisa mencapai panjang 50 cm dan berwarna gelap untuk melindunginya dari sinar matahari."
+  },
+  {
+    "id": 43,
+    "kategori": "Luar Angkasa",
+    "fakta": "Galaksi Andromeda adalah galaksi spiral besar terdekat dengan Bima Sakti dan diperkirakan akan bertabrakan dengan galaksi kita dalam miliaran tahun."
+  },
+  {
+    "id": 44,
+    "kategori": "Luar Angkasa",
+    "fakta": "Ada kemungkinan ada lebih banyak air di bawah permukaan Europa, salah satu bulan Jupiter, daripada di semua lautan di Bumi."
+  },
+  {
+    "id": 45,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Manusia melepaskan sel kulit mati sekitar 0,03 hingga 0,09 gram setiap jam."
+  },
+  {
+    "id": 46,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Otak manusia menghasilkan listrik yang cukup untuk menyalakan bola lampu kecil."
+  },
+  {
+    "id": 47,
+    "kategori": "Tumbuhan",
+    "fakta": "Tanaman Venus Flytrap adalah tanaman karnivora yang menangkap serangga dengan daunnya yang berbentuk seperti rahang."
+  },
+  {
+    "id": 48,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Baobab dapat menyimpan ribuan liter air di batangnya yang besar untuk bertahan hidup di musim kemarau."
+  },
+  {
+    "id": 49,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Kekaisaran Romawi pada puncaknya menguasai wilayah yang mencakup sebagian besar Eropa, Afrika Utara, dan Timur Tengah."
+  },
+  {
+    "id": 50,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Revolusi Industri, yang dimulai di Inggris pada akhir abad ke-18, mengubah masyarakat dari agraris menjadi industri."
+  },
+  {
+    "id": 51,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Kerajaan Sriwijaya adalah kerajaan maritim Buddha yang kuat dan berpusat di Pulau Sumatra, menguasai perdagangan di Asia Tenggara."
+  },
+  {
+    "id": 52,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Sistem Tanam Paksa (Cultuurstelsel) yang diterapkan Belanda di Indonesia pada abad ke-19 menyebabkan penderitaan besar bagi rakyat."
+  },
+  {
+    "id": 53,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Vaksin pertama di dunia dikembangkan oleh Edward Jenner pada tahun 1796 untuk melawan cacar."
+  },
+  {
+    "id": 54,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "DNA (Deoxyribonucleic Acid) membawa informasi genetik yang menentukan karakteristik setiap organisme hidup."
+  },
+  {
+    "id": 55,
+    "kategori": "Sains Umum",
+    "fakta": "Bunyi tidak dapat merambat di ruang hampa karena tidak ada medium untuk gelombang suara bergerak."
+  },
+  {
+    "id": 56,
+    "kategori": "Sains Umum",
+    "fakta": "Pelangi adalah fenomena optik dan meteorologi yang disebabkan oleh refleksi, refraksi, dan dispersi cahaya dalam tetesan air."
+  },
+  {
+    "id": 57,
+    "kategori": "Geografi",
+    "fakta": "Gurun Sahara di Afrika adalah gurun panas terbesar di dunia."
+  },
+  {
+    "id": 58,
+    "kategori": "Geografi",
+    "fakta": "Indonesia adalah negara kepulauan terbesar di dunia, dengan lebih dari 17.000 pulau."
+  },
+  {
+    "id": 59,
+    "kategori": "Teknologi",
+    "fakta": "Telepon pertama ditemukan oleh Alexander Graham Bell pada tahun 1876."
+  },
+  {
+    "id": 60,
+    "kategori": "Teknologi",
+    "fakta": "Internet berawal dari proyek ARPANET yang didanai oleh Departemen Pertahanan Amerika Serikat pada tahun 1960-an."
+  },
+  {
+    "id": 61,
+    "kategori": "Seni & Budaya",
+    "fakta": "Musik klasik Barat mencakup periode dari sekitar abad ke-9 hingga saat ini, dengan era Barok, Klasik, dan Romantis sebagai yang paling dikenal."
+  },
+  {
+    "id": 62,
+    "kategori": "Seni & Budaya",
+    "fakta": "Batik Indonesia memiliki beragam motif yang sarat makna filosofis dan budaya dari berbagai daerah."
+  },
+  {
+    "id": 63,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Cokelat berasal dari biji pohon kakao yang pertama kali dibudidayakan oleh peradaban kuno di Mesoamerika."
+  },
+  {
+    "id": 64,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Keju adalah produk olahan susu yang memiliki ribuan variasi rasa, tekstur, dan bentuk di seluruh dunia."
+  },
+  {
+    "id": 65,
+    "kategori": "Psikologi",
+    "fakta": "Deja vu adalah perasaan kuat bahwa suatu peristiwa atau pengalaman yang sedang dialami sudah pernah dialami sebelumnya."
+  },
+  {
+    "id": 66,
+    "kategori": "Psikologi",
+    "fakta": "Kecerdasan emosional (EQ) merujuk pada kemampuan untuk mengenali, memahami, dan mengelola emosi diri sendiri dan orang lain."
+  },
+  {
+    "id": 67,
+    "kategori": "Ekonomi",
+    "fakta": "Inflasi adalah kenaikan tingkat harga umum barang dan jasa dalam suatu perekonomian selama periode waktu tertentu."
+  },
+  {
+    "id": 68,
+    "kategori": "Ekonomi",
+    "fakta": "Produk Domestik Bruto (PDB) adalah total nilai pasar semua barang dan jasa akhir yang diproduksi di suatu negara dalam periode tertentu."
+  },
+  {
+    "id": 69,
+    "kategori": "Olahraga",
+    "fakta": "Michael Jordan dianggap oleh banyak orang sebagai pemain bola basket terbaik sepanjang masa."
+  },
+  {
+    "id": 70,
+    "kategori": "Olahraga",
+    "fakta": "Pencak Silat adalah seni bela diri tradisional yang berasal dari Kepulauan Melayu, termasuk Indonesia."
+  },
+  {
+    "id": 71,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Aurora Borealis (Cahaya Utara) dan Aurora Australis (Cahaya Selatan) disebabkan oleh partikel bermuatan dari matahari yang berinteraksi dengan atmosfer Bumi."
+  },
+  {
+    "id": 72,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Daur ulang satu ton kertas dapat menyelamatkan sekitar 17 pohon dewasa."
+  },
+  {
+    "id": 73,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Alfabet pertama yang diketahui diciptakan oleh bangsa Fenisia sekitar 3.000 tahun yang lalu."
+  },
+  {
+    "id": 74,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "William Shakespeare adalah penulis drama dan penyair Inggris yang dianggap sebagai salah satu penulis terbesar dalam bahasa Inggris."
+  },
+  {
+    "id": 75,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Albert Einstein mengembangkan teori relativitas, salah satu dari dua pilar fisika modern."
+  },
+  {
+    "id": 76,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Marie Curie adalah orang pertama dan satu-satunya wanita yang memenangkan Hadiah Nobel dalam dua bidang ilmu yang berbeda (Fisika dan Kimia)."
+  },
+  {
+    "id": 77,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Roda diperkirakan ditemukan di Mesopotamia sekitar 3500 SM, awalnya untuk pembuatan tembikar."
+  },
+  {
+    "id": 78,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Kertas ditemukan di Tiongkok oleh Cai Lun pada sekitar tahun 105 M."
+  },
+  {
+    "id": 79,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Fakta: Manusia tidak hanya menggunakan 10% dari otaknya; kita menggunakan hampir seluruh bagian otak, meskipun tidak secara bersamaan."
+  },
+  {
+    "id": 80,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Mitos: Banteng marah melihat warna merah. Faktanya, banteng buta warna terhadap merah dan hijau; gerakan jubah matadorlah yang memprovokasi mereka."
+  },
+  {
+    "id": 81,
+    "kategori": "Hewan",
+    "fakta": "Beberapa jenis cumi-cumi dan gurita dapat menyemprotkan tinta untuk membingungkan predator dan melarikan diri."
+  },
+  {
+    "id": 82,
+    "kategori": "Hewan",
+    "fakta": "Semut dapat mengangkat beban hingga 50 kali berat tubuhnya sendiri."
+  },
+  {
+    "id": 83,
+    "kategori": "Luar Angkasa",
+    "fakta": "Matahari menyumbang sekitar 99,86% dari total massa Tata Surya kita."
+  },
+  {
+    "id": 84,
+    "kategori": "Luar Angkasa",
+    "fakta": "Sabuk Kuiper adalah wilayah di Tata Surya di luar Neptunus yang berisi banyak benda es kecil, termasuk Pluto."
+  },
+  {
+    "id": 85,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Hidung manusia dapat mengingat sekitar 50.000 aroma yang berbeda."
+  },
+  {
+    "id": 86,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Kuku jari tangan tumbuh sekitar empat kali lebih cepat daripada kuku jari kaki."
+  },
+  {
+    "id": 87,
+    "kategori": "Tumbuhan",
+    "fakta": "Rafflesia arnoldii, yang ditemukan di hutan hujan Indonesia, menghasilkan bunga individu terbesar di dunia."
+  },
+  {
+    "id": 88,
+    "kategori": "Tumbuhan",
+    "fakta": "Kopi berasal dari biji tanaman Coffea, yang pertama kali dibudidayakan di Ethiopia."
+  },
+  {
+    "id": 89,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Zaman Es terakhir berakhir sekitar 11.700 tahun yang lalu, memungkinkan perkembangan pertanian dan peradaban manusia."
+  },
+  {
+    "id": 90,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Jalur Sutra adalah jaringan rute perdagangan kuno yang menghubungkan Timur dan Barat, memfasilitasi pertukaran barang, budaya, dan ide."
+  },
+  {
+    "id": 91,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Kerajaan Majapahit mencapai puncak kejayaannya pada abad ke-14 di bawah pemerintahan Hayam Wuruk dan patihnya, Gajah Mada."
+  },
+  {
+    "id": 92,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Proklamasi Kemerdekaan Indonesia dibacakan oleh Soekarno pada tanggal 17 Agustus 1945."
+  },
+  {
+    "id": 93,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Tidur yang cukup sangat penting untuk fungsi kognitif, konsolidasi memori, dan perbaikan sel tubuh."
+  },
+  {
+    "id": 94,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Golongan darah manusia (A, B, AB, O) ditentukan oleh ada atau tidaknya antigen tertentu pada permukaan sel darah merah."
+  },
+  {
+    "id": 95,
+    "kategori": "Sains Umum",
+    "fakta": "Semua materi terdiri dari atom, yang merupakan unit dasar dari unsur kimia."
+  },
+  {
+    "id": 96,
+    "kategori": "Sains Umum",
+    "fakta": "Hukum kekekalan energi menyatakan bahwa energi tidak dapat diciptakan atau dimusnahkan, hanya dapat diubah dari satu bentuk ke bentuk lainnya."
+  },
+  {
+    "id": 97,
+    "kategori": "Geografi",
+    "fakta": "Gunung Everest di Himalaya adalah titik tertinggi di permukaan Bumi, dengan ketinggian 8.848,86 meter di atas permukaan laut."
+  },
+  {
+    "id": 98,
+    "kategori": "Geografi",
+    "fakta": "Danau Baikal di Siberia, Rusia, adalah danau air tawar terdalam dan tertua di dunia, serta mengandung sekitar 20% air tawar permukaan dunia yang tidak membeku."
+  },
+  {
+    "id": 99,
+    "kategori": "Teknologi",
+    "fakta": "Ponsel pertama yang tersedia secara komersial adalah Motorola DynaTAC 8000x pada tahun 1983."
+  },
+  {
+    "id": 100,
+    "kategori": "Teknologi",
+    "fakta": "Kecerdasan Buatan (AI) adalah bidang ilmu komputer yang berfokus pada penciptaan mesin yang dapat melakukan tugas-tugas yang biasanya membutuhkan kecerdasan manusia."
+  },
+  {
+    "id": 101,
+    "kategori": "Seni & Budaya",
+    "fakta": "Tari Kecak dari Bali adalah tarian ritual yang melibatkan puluhan hingga ratusan penari laki-laki yang duduk melingkar dan menyerukan 'cak-cak'."
+  },
+  {
+    "id": 102,
+    "kategori": "Seni & Budaya",
+    "fakta": "Kaligrafi adalah seni menulis indah, seringkali menggunakan pena, kuas, atau alat tulis lainnya."
+  },
+  {
+    "id": 103,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Sushi adalah hidangan Jepang yang terdiri dari nasi cuka yang dikombinasikan dengan bahan lain, biasanya makanan laut mentah dan sayuran."
+  },
+  {
+    "id": 104,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Teh adalah minuman kedua yang paling banyak dikonsumsi di dunia setelah air."
+  },
+  {
+    "id": 105,
+    "kategori": "Psikologi",
+    "fakta": "Konformitas adalah kecenderungan untuk menyesuaikan sikap, keyakinan, dan perilaku seseorang dengan norma kelompok."
+  },
+  {
+    "id": 106,
+    "kategori": "Psikologi",
+    "fakta": "Memori jangka pendek manusia rata-rata hanya dapat menampung sekitar 7 item informasi sekaligus."
+  },
+  {
+    "id": 107,
+    "kategori": "Ekonomi",
+    "fakta": "Resesi ekonomi umumnya didefinisikan sebagai penurunan signifikan dalam aktivitas ekonomi yang tersebar di seluruh ekonomi, berlangsung lebih dari beberapa bulan."
+  },
+  {
+    "id": 108,
+    "kategori": "Ekonomi",
+    "fakta": "Globalisasi mengacu pada proses interkoneksi dan saling ketergantungan yang meningkat antara negara-negara di dunia melalui perdagangan, investasi, dan teknologi."
+  },
+  {
+    "id": 109,
+    "kategori": "Olahraga",
+    "fakta": "Lari maraton memiliki jarak resmi 42,195 kilometer (26,219 mil)."
+  },
+  {
+    "id": 110,
+    "kategori": "Olahraga",
+    "fakta": "Indonesia telah memenangkan medali emas Olimpiade terutama dari cabang olahraga bulu tangkis."
+  },
+  {
+    "id": 111,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Deforestasi atau penggundulan hutan adalah salah satu penyebab utama perubahan iklim dan hilangnya keanekaragaman hayati."
+  },
+  {
+    "id": 112,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Efek rumah kaca adalah proses alami yang menghangatkan permukaan Bumi, tetapi aktivitas manusia telah meningkatkannya secara berlebihan."
+  },
+  {
+    "id": 113,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Ada sekitar 6.500 hingga 7.000 bahasa yang digunakan di dunia saat ini, meskipun banyak di antaranya terancam punah."
+  },
+  {
+    "id": 114,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Epos Gilgamesh dari Mesopotamia kuno dianggap sebagai salah satu karya sastra tertua yang diketahui."
+  },
+  {
+    "id": 115,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Leonardo da Vinci adalah seorang polimatik Renaisans Italia yang terkenal sebagai pelukis, pematung, arsitek, musisi, ilmuwan, dan banyak lagi."
+  },
+  {
+    "id": 116,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Nelson Mandela adalah seorang revolusioner anti-apartheid, politisi, dan filantropis Afrika Selatan yang menjabat sebagai Presiden Afrika Selatan dari tahun 1994 hingga 1999."
+  },
+  {
+    "id": 117,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Kompas magnetik pertama kali ditemukan di Tiongkok pada masa Dinasti Han (abad ke-2 SM hingga abad ke-2 M)."
+  },
+  {
+    "id": 118,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Bola lampu pijar yang praktis dan tahan lama dikembangkan oleh Thomas Edison pada akhir abad ke-19."
+  },
+  {
+    "id": 119,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Fakta: Viking tidak mengenakan helm bertanduk; ini adalah penggambaran populer yang tidak akurat secara historis."
+  },
+  {
+    "id": 120,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Mitos: Gula membuat anak-anak hiperaktif. Faktanya, penelitian ilmiah belum menemukan hubungan sebab-akibat yang kuat antara konsumsi gula dan hiperaktivitas pada anak-anak."
+  },
+  {
+    "id": 121,
+    "kategori": "Hewan",
+    "fakta": "Paus Biru adalah hewan terbesar yang pernah ada di Bumi, bahkan lebih besar dari dinosaurus terbesar."
+  },
+  {
+    "id": 122,
+    "kategori": "Hewan",
+    "fakta": "Beberapa spesies burung, seperti Albatros, dapat tidur sambil terbang."
+  },
+  {
+    "id": 123,
+    "kategori": "Luar Angkasa",
+    "fakta": "Cahaya dari bintang terdekat, Proxima Centauri, membutuhkan waktu sekitar 4,24 tahun untuk mencapai Bumi."
+  },
+  {
+    "id": 124,
+    "kategori": "Luar Angkasa",
+    "fakta": "Meteoroid adalah batuan kecil di luar angkasa, meteor adalah saat ia terbakar di atmosfer Bumi (bintang jatuh), dan meteorit adalah sisa-sisanya yang mencapai permukaan Bumi."
+  },
+  {
+    "id": 125,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Jantung manusia berdetak rata-rata sekitar 100.000 kali per hari."
+  },
+  {
+    "id": 126,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Manusia memiliki sidik lidah yang unik, sama seperti sidik jari."
+  },
+  {
+    "id": 127,
+    "kategori": "Tumbuhan",
+    "fakta": "Bambu sebenarnya termasuk dalam keluarga rumput-rumputan (Poaceae)."
+  },
+  {
+    "id": 128,
+    "kategori": "Tumbuhan",
+    "fakta": "Fotosintesis adalah proses di mana tumbuhan hijau menggunakan sinar matahari, air, dan karbon dioksida untuk menciptakan makanan mereka sendiri (glukosa) dan melepaskan oksigen."
+  },
+  {
+    "id": 129,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Dunia Pertama (1914-1918) dikenal sebagai 'Perang Besar' dan melibatkan banyak negara di seluruh dunia."
+  },
+  {
+    "id": 130,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Pendaratan di Normandia (D-Day) pada 6 Juni 1944 adalah operasi pendaratan amfibi terbesar dalam sejarah, menandai awal pembebasan Eropa Barat dari pendudukan Nazi."
+  },
+  {
+    "id": 131,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Konferensi Asia-Afrika diadakan di Bandung pada tahun 1955, mengumpulkan negara-negara Asia dan Afrika yang baru merdeka untuk mempromosikan kerjasama ekonomi dan budaya serta menentang kolonialisme."
+  },
+  {
+    "id": 132,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "R.A. Kartini adalah seorang pahlawan nasional Indonesia yang dikenal sebagai pelopor kebangkitan perempuan pribumi melalui pendidikan."
+  },
+  {
+    "id": 133,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Vitamin adalah senyawa organik yang dibutuhkan tubuh dalam jumlah kecil untuk fungsi metabolisme yang normal."
+  },
+  {
+    "id": 134,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Anestesi memungkinkan dilakukannya prosedur bedah tanpa rasa sakit, sebuah kemajuan besar dalam dunia kedokteran."
+  },
+  {
+    "id": 135,
+    "kategori": "Sains Umum",
+    "fakta": "Tabel periodik unsur mengatur semua unsur kimia yang diketahui berdasarkan nomor atom dan sifat kimianya."
+  },
+  {
+    "id": 136,
+    "kategori": "Sains Umum",
+    "fakta": "Gravitasi adalah gaya tarik-menarik antara dua benda yang memiliki massa."
+  },
+  {
+    "id": 137,
+    "kategori": "Geografi",
+    "fakta": "Great Barrier Reef di Australia adalah sistem terumbu karang terbesar di dunia, terlihat bahkan dari luar angkasa."
+  },
+  {
+    "id": 138,
+    "kategori": "Geografi",
+    "fakta": "Islandia dikenal sebagai 'Tanah Es dan Api' karena memiliki gletser dan gunung berapi aktif."
+  },
+  {
+    "id": 139,
+    "kategori": "Teknologi",
+    "fakta": "Robotika adalah cabang teknologi yang berkaitan dengan desain, konstruksi, operasi, dan aplikasi robot."
+  },
+  {
+    "id": 140,
+    "kategori": "Teknologi",
+    "fakta": "GPS (Global Positioning System) menggunakan jaringan satelit untuk menentukan lokasi di Bumi secara akurat."
+  },
+  {
+    "id": 141,
+    "kategori": "Seni & Budaya",
+    "fakta": "Opera adalah bentuk seni di mana penyanyi dan musisi menampilkan karya dramatis yang menggabungkan teks (libretto) dan skor musik."
+  },
+  {
+    "id": 142,
+    "kategori": "Seni & Budaya",
+    "fakta": "Angklung adalah alat musik multitonal (bernada ganda) yang berkembang dari masyarakat Sunda, terbuat dari bambu."
+  },
+  {
+    "id": 143,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Pasta adalah makanan pokok dalam masakan Italia, dengan ratusan bentuk dan ukuran yang berbeda."
+  },
+  {
+    "id": 144,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Fermentasi adalah proses metabolisme yang menghasilkan perubahan kimia dalam substrat organik melalui aksi enzim, sering digunakan dalam pembuatan makanan seperti yogurt, bir, dan tempe."
+  },
+  {
+    "id": 145,
+    "kategori": "Psikologi",
+    "fakta": "Bias konfirmasi adalah kecenderungan untuk mencari, menafsirkan, mendukung, dan mengingat informasi dengan cara yang mengkonfirmasi atau mendukung keyakinan atau nilai-nilai yang sudah ada sebelumnya."
+  },
+  {
+    "id": 146,
+    "kategori": "Psikologi",
+    "fakta": "Efek Dunning-Kruger adalah bias kognitif di mana orang dengan kemampuan rendah pada suatu tugas melebih-lebihkan kemampuan mereka."
+  },
+  {
+    "id": 147,
+    "kategori": "Ekonomi",
+    "fakta": "Pasar saham adalah tempat di mana saham perusahaan publik diperdagangkan."
+  },
+  {
+    "id": 148,
+    "kategori": "Ekonomi",
+    "fakta": "Kewirausahaan adalah proses merancang, meluncurkan, dan menjalankan bisnis baru, yang seringkali awalnya merupakan usaha kecil."
+  },
+  {
+    "id": 149,
+    "kategori": "Olahraga",
+    "fakta": "Tour de France adalah balap sepeda jalan raya tahunan paling bergengsi di dunia, yang diadakan terutama di Prancis."
+  },
+  {
+    "id": 150,
+    "kategori": "Olahraga",
+    "fakta": "FIFA World Cup (Piala Dunia FIFA) adalah kompetisi sepak bola internasional yang diikuti oleh tim nasional putra senior anggota Fédération Internationale de Football Association (FIFA)."
+  },
+  {
+    "id": 151,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Migrasi hewan adalah pergerakan musiman hewan dari satu wilayah ke wilayah lain, seringkali untuk mencari makanan atau berkembang biak."
+  },
+  {
+    "id": 152,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Energi terbarukan adalah energi yang dikumpulkan dari sumber daya terbarukan, yang secara alami diisi ulang pada skala waktu manusia, seperti sinar matahari, angin, hujan, pasang surut, gelombang, dan panas bumi."
+  },
+  {
+    "id": 153,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Bahasa Isyarat adalah bahasa visual yang menggunakan gerakan tangan, ekspresi wajah, dan bahasa tubuh untuk berkomunikasi, terutama oleh komunitas Tuli."
+  },
+  {
+    "id": 154,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Haiku adalah bentuk puisi pendek Jepang yang terdiri dari tiga frasa, dengan pola suku kata 5, 7, 5."
+  },
+  {
+    "id": 155,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Mahatma Gandhi adalah pemimpin gerakan kemerdekaan India yang menggunakan perlawanan tanpa kekerasan."
+  },
+  {
+    "id": 156,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Stephen Hawking adalah seorang fisikawan teoretis, kosmolog, dan penulis Inggris yang terkenal karena karyanya tentang lubang hitam dan singularitas."
+  },
+  {
+    "id": 157,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Sinar-X ditemukan secara tidak sengaja oleh Wilhelm Conrad Roentgen pada tahun 1895."
+  },
+  {
+    "id": 158,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Plastik pertama yang sepenuhnya sintetis, Bakelite, diciptakan oleh Leo Baekeland pada tahun 1907."
+  },
+  {
+    "id": 159,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Fakta: Membaca dalam cahaya redup tidak akan merusak mata Anda secara permanen, tetapi dapat menyebabkan kelelahan mata."
+  },
+  {
+    "id": 160,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Mitos: Ikan mas memiliki memori tiga detik. Faktanya, mereka dapat mengingat informasi selama berbulan-bulan."
+  }, 
+  {
+    "id": 161,
+    "kategori": "Hewan",
+    "fakta": "Platipus adalah salah satu dari sedikit mamalia yang bertelur (monotremata) dan memiliki paruh seperti bebek."
+  },
+  {
+    "id": 162,
+    "kategori": "Hewan",
+    "fakta": "Kumbang kotoran (scarab beetle) dianggap suci di Mesir kuno, melambangkan kelahiran kembali dan regenerasi."
+  },
+  {
+    "id": 163,
+    "kategori": "Luar Angkasa",
+    "fakta": "Planet kerdil Ceres adalah objek terbesar di sabuk asteroid antara Mars dan Jupiter."
+  },
+  {
+    "id": 164,
+    "kategori": "Luar Angkasa",
+    "fakta": "Voyager 1, diluncurkan pada 1977, adalah objek buatan manusia terjauh dari Bumi dan telah memasuki ruang antarbintang."
+  },
+  {
+    "id": 165,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Rata-rata, manusia menghasilkan sekitar 1 hingga 1,5 liter air liur setiap hari."
+  },
+  {
+    "id": 166,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Ada lebih banyak bakteri di dalam dan di tubuh manusia daripada sel manusia itu sendiri."
+  },
+  {
+    "id": 167,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Jenderal Sherman (General Sherman Tree) di Taman Nasional Sequoia, AS, adalah pohon terbesar di dunia berdasarkan volume."
+  },
+  {
+    "id": 168,
+    "kategori": "Tumbuhan",
+    "fakta": "Banyak tanaman menghasilkan senyawa kimia sebagai mekanisme pertahanan terhadap herbivora atau patogen."
+  },
+  {
+    "id": 169,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Renaisans adalah periode dalam sejarah Eropa, menandai transisi dari Abad Pertengahan ke Modernitas dan mencakup kebangkitan besar dalam seni, sastra, dan ilmu pengetahuan."
+  },
+  {
+    "id": 170,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Dingin (sekitar 1947–1991) adalah periode ketegangan geopolitik antara Amerika Serikat dan Uni Soviet beserta sekutu masing-masing."
+  },
+  {
+    "id": 171,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Perang Diponegoro (1825-1830) adalah salah satu perang terbesar yang dihadapi Belanda selama masa penjajahan di Jawa."
+  },
+  {
+    "id": 172,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Manusia Jawa (Pithecanthropus erectus) adalah salah satu fosil manusia purba pertama yang ditemukan, oleh Eugene Dubois di Trinil pada tahun 1891."
+  },
+  {
+    "id": 173,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Sistem limfatik adalah bagian penting dari sistem kekebalan tubuh dan membantu membuang racun dari tubuh."
+  },
+  {
+    "id": 174,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Transplantasi organ pertama yang berhasil (ginjal) dilakukan pada tahun 1954 oleh Dr. Joseph Murray."
+  },
+  {
+    "id": 175,
+    "kategori": "Sains Umum",
+    "fakta": "pH adalah skala yang digunakan untuk menentukan tingkat keasaman atau kebasaan suatu larutan berair."
+  },
+  {
+    "id": 176,
+    "kategori": "Sains Umum",
+    "fakta": "Teori evolusi melalui seleksi alam diajukan oleh Charles Darwin dalam bukunya 'On the Origin of Species' (1859)."
+  },
+  {
+    "id": 177,
+    "kategori": "Geografi",
+    "fakta": "Laut Mati adalah danau garam yang terletak di antara Israel dan Yordania, dan merupakan titik terendah di daratan Bumi."
+  },
+  {
+    "id": 178,
+    "kategori": "Geografi",
+    "fakta": "Cincin Api Pasifik adalah wilayah di sekitar Samudra Pasifik yang sering mengalami gempa bumi dan letusan gunung berapi."
+  },
+  {
+    "id": 179,
+    "kategori": "Teknologi",
+    "fakta": "Blockchain adalah teknologi buku besar terdistribusi yang mendasari mata uang kripto seperti Bitcoin."
+  },
+  {
+    "id": 180,
+    "kategori": "Teknologi",
+    "fakta": "Printer 3D dapat membuat objek fisik tiga dimensi dari model digital."
+  },
+  {
+    "id": 181,
+    "kategori": "Seni & Budaya",
+    "fakta": "Arsitektur Gotik, populer di Eropa selama Abad Pertengahan Tinggi dan Akhir, ditandai dengan lengkungan runcing, kubah berusuk, dan penopang layang."
+  },
+  {
+    "id": 182,
+    "kategori": "Seni & Budaya",
+    "fakta": "Gamelan adalah ansambel musik tradisional Jawa dan Bali yang terdiri dari berbagai instrumen perkusi metalofon, gambang, gendang, dan gong."
+  },
+  {
+    "id": 183,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Cabai mendapatkan rasa pedasnya dari senyawa kimia yang disebut kapsaisin."
+  },
+  {
+    "id": 184,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Roti adalah makanan pokok di banyak budaya di seluruh dunia, biasanya dibuat dari tepung gandum atau biji-bijian lain, air, dan ragi."
+  },
+  {
+    "id": 185,
+    "kategori": "Psikologi",
+    "fakta": "Stres adalah respons tubuh terhadap tuntutan atau tekanan, baik fisik maupun emosional."
+  },
+  {
+    "id": 186,
+    "kategori": "Psikologi",
+    "fakta": "Kondisioning klasik, yang dipelopori oleh Ivan Pavlov, adalah proses pembelajaran di mana stimulus netral dikaitkan dengan stimulus yang secara alami memicu respons."
+  },
+  {
+    "id": 187,
+    "kategori": "Ekonomi",
+    "fakta": "Suku bunga adalah biaya meminjam uang atau imbalan untuk menabung uang."
+  },
+  {
+    "id": 188,
+    "kategori": "Ekonomi",
+    "fakta": "Deflasi adalah penurunan tingkat harga umum barang dan jasa, kebalikan dari inflasi."
+  },
+  {
+    "id": 189,
+    "kategori": "Olahraga",
+    "fakta": "Kriket adalah olahraga tim populer yang dimainkan dengan pemukul dan bola, terutama di negara-negara Persemakmuran."
+  },
+  {
+    "id": 190,
+    "kategori": "Olahraga",
+    "fakta": "Paralimpiade adalah ajang olahraga internasional multi-cabang untuk atlet dengan berbagai disabilitas fisik."
+  },
+  {
+    "id": 191,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Keanekaragaman hayati mengacu pada variasi kehidupan di Bumi pada semua tingkatannya, dari gen hingga ekosistem."
+  },
+  {
+    "id": 192,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Polusi plastik adalah ancaman serius bagi ekosistem laut dan darat di seluruh dunia."
+  },
+  {
+    "id": 193,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Esperanto adalah bahasa buatan yang paling banyak digunakan di dunia, diciptakan oleh L. L. Zamenhof pada akhir abad ke-19."
+  },
+  {
+    "id": 194,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Pramoedya Ananta Toer adalah salah satu penulis Indonesia paling terkenal di dunia, dikenal dengan Tetralogi Buru."
+  },
+  {
+    "id": 195,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Isaac Newton merumuskan hukum gerak dan gravitasi universal, yang menjadi dasar fisika klasik."
+  },
+  {
+    "id": 196,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "B.J. Habibie adalah Presiden ketiga Indonesia dan seorang insinyur aeronautika terkemuka."
+  },
+  {
+    "id": 197,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Mikroskop ditemukan pada akhir abad ke-16 atau awal abad ke-17, memungkinkan pengamatan objek yang sangat kecil."
+  },
+  {
+    "id": 198,
+    "kategori": "Penemuan & Inovasi",
+    "fakta": "Pembangkit listrik tenaga nuklir pertama yang menghasilkan listrik untuk jaringan komersial mulai beroperasi pada tahun 1954 di Obninsk, Uni Soviet."
+  },
+  {
+    "id": 199,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Fakta: Kelelawar tidak buta; sebagian besar spesies kelelawar dapat melihat dengan baik, dan beberapa bahkan menggunakan penglihatan selain ekolokasi."
+  },
+  {
+    "id": 200,
+    "kategori": "Mitos & Fakta",
+    "fakta": "Mitos: Petir tidak pernah menyambar tempat yang sama dua kali. Faktanya, gedung-gedung tinggi seperti Empire State Building disambar petir berkali-kali setiap tahun."
+  }
+]  
