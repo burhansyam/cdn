@@ -1,0 +1,1502 @@
+[
+  {
+    "id": 1,
+    "kategori": "Hewan",
+    "fakta": "Cicak bisa memutuskan ekornya untuk mengelabui predator, lalu menumbuhkannya kembali."
+  },
+  {
+    "id": 2,
+    "kategori": "Luar Angkasa",
+    "fakta": "Matahari bisa menampung sekitar 1,3 juta planet seukuran Bumi di dalamnya."
+  },
+  {
+    "id": 3,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Lambung manusia menghasilkan lapisan lendir baru setiap dua minggu untuk menghindari mencerna dirinya sendiri."
+  },
+  {
+    "id": 4,
+    "kategori": "Tumbuhan",
+    "fakta": "Bambu adalah tanaman dengan pertumbuhan tercepat, bisa tumbuh hingga 91 cm dalam sehari."
+  },
+  {
+    "id": 5,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Piramida Agung Giza awalnya dilapisi oleh batu kapur putih yang berkilau sehingga bisa terlihat dari pegunungan."
+  },
+  {
+    "id": 6,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Kerajaan Majapahit adalah kerajaan terbesar dalam sejarah Indonesia, menguasai wilayah yang kini menjadi beberapa negara Asia Tenggara."
+  },
+  {
+    "id": 7,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Tulang manusia lima kali lebih kuat dari batang baja dengan berat yang sama."
+  },
+  {
+    "id": 8,
+    "kategori": "Sains Umum",
+    "fakta": "Air adalah satu-satunya zat di Bumi yang secara alami ada dalam tiga bentuk: padat, cair, dan gas."
+  },
+  {
+    "id": 9,
+    "kategori": "Geografi",
+    "fakta": "Danau Baikal di Rusia adalah danau terdalam di dunia, dengan kedalaman lebih dari 1.600 meter."
+  },
+  {
+    "id": 10,
+    "kategori": "Teknologi",
+    "fakta": "Password '123456' masih menjadi password paling populer di dunia, meskipun sangat mudah diretas."
+  },
+  {
+    "id": 11,
+    "kategori": "Seni & Budaya",
+    "fakta": "Mona Lisa tidak memiliki alis karena itu adalah tren fashion di Florence pada masa Renaissance."
+  },
+  {
+    "id": 12,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Madu adalah satu-satunya makanan yang tidak pernah basi - madu berusia 3.000 tahun masih bisa dimakan."
+  },
+  {
+    "id": 13,
+    "kategori": "Ekonomi",
+    "fakta": "Inflasi terburuk dalam sejarah terjadi di Zimbabwe pada 2008, mencapai 79,6 miliar persen per bulan."
+  },
+  {
+    "id": 14,
+    "kategori": "Olahraga",
+    "fakta": "Olimpiade kuno diadakan selama lebih dari 1.000 tahun tanpa jeda, dari 776 SM hingga 393 M."
+  },
+  {
+    "id": 15,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Hutan Amazon menghasilkan 20% oksigen dunia meskipun hanya menutupi 1% permukaan Bumi."
+  },
+  {
+    "id": 16,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Bahasa Indonesia adalah bahasa yang paling cepat pertumbuhan penuturnya di antara 10 bahasa utama dunia."
+  },
+  {
+    "id": 17,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Albert Einstein menolak tawaran menjadi presiden Israel pada tahun 1952."
+  },
+  {
+    "id": 18,
+    "kategori": "Musik",
+    "fakta": "Lagu 'Happy Birthday' awalnya berjudul 'Good Morning to All' dan dibuat untuk guru TK."
+  },
+  {
+    "id": 19,
+    "kategori": "Religi",
+    "fakta": "Agama tertua di dunia yang masih dipraktikkan adalah Hinduisme, berasal dari sekitar 4.000 tahun lalu."
+  },
+  {
+    "id": 20,
+    "kategori": "Otomotif",
+    "fakta": "Mobil pertama di dunia memiliki kecepatan maksimum hanya 16 km/jam."
+  },
+  {
+    "id": 21,
+    "kategori": "Gadget",
+    "fakta": "Smartphone pertama di dunia adalah IBM Simon, diluncurkan pada 1994 dengan harga $899."
+  },
+  {
+    "id": 22,
+    "kategori": "Politik",
+    "fakta": "Islandia adalah negara demokrasi tertua di dunia, dengan parlemen pertama didirikan pada tahun 930."
+  },
+  {
+    "id": 23,
+    "kategori": "Negara",
+    "fakta": "Vatikan adalah negara terkecil di dunia dengan luas hanya 0,44 km²."
+  },
+  {
+    "id": 24,
+    "kategori": "Hewan",
+    "fakta": "Jerapah memiliki lidah sepanjang 53 cm yang bisa membersihkan telinganya sendiri."
+  },
+  {
+    "id": 25,
+    "kategori": "Luar Angkasa",
+    "fakta": "Jika dua potong logam bersentuhan di ruang hampa udara, mereka akan menyatu secara permanen."
+  },
+  {
+    "id": 26,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Jantung wanita berdetak lebih cepat daripada pria, sekitar 78 denyut per menit dibandingkan 70 pada pria."
+  },
+  {
+    "id": 27,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon tertua di dunia adalah pinus bristlecone berusia lebih dari 5.000 tahun di California."
+  },
+  {
+    "id": 28,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang terlama dalam sejarah adalah Perang 335 Tahun antara Belanda dan Kepulauan Scilly (1651-1986) tanpa korban jiwa."
+  },
+  {
+    "id": 29,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Borobudur adalah candi Buddha terbesar di dunia, dibangun pada abad ke-9 tanpa menggunakan semen."
+  },
+  {
+    "id": 30,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Seseorang bisa hidup normal meskipun kehilangan 75% hati karena kemampuannya untuk beregenerasi."
+  },
+  {
+    "id": 31,
+    "kategori": "Sains Umum",
+    "fakta": "Petir bisa memanaskan udara di sekitarnya hingga 30.000°C - lima kali lebih panas dari permukaan matahari."
+  },
+  {
+    "id": 32,
+    "kategori": "Geografi",
+    "fakta": "Chile adalah negara paling panjang di dunia, membentang 4.300 km dari utara ke selatan tapi rata-rata hanya 177 km lebarnya."
+  },
+  {
+    "id": 33,
+    "kategori": "Teknologi",
+    "fakta": "Volume data internet pada tahun 2020 setara dengan 44 zettabytes (44 triliun gigabytes)."
+  },
+  {
+    "id": 34,
+    "kategori": "Seni & Budaya",
+    "fakta": "Wayang kulit telah diakui UNESCO sebagai Masterpiece of Oral and Intangible Heritage of Humanity sejak 2003."
+  },
+  {
+    "id": 35,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Kopi luwak Indonesia adalah salah satu kopi termahal di dunia, diproses melalui sistem pencernaan musang luwak."
+  },
+  {
+    "id": 36,
+    "kategori": "Ekonomi",
+    "fakta": "Bitcoin pertama kali digunakan untuk transaksi nyata pada 2010 ketika seseorang membeli 2 pizza dengan 10.000 BTC (kini bernilai ratusan juta dolar)."
+  },
+  {
+    "id": 37,
+    "kategori": "Olahraga",
+    "fakta": "Piala Dunia FIFA pertama pada 1930 hanya diikuti oleh 13 tim dan tidak ada babak kualifikasi."
+  },
+  {
+    "id": 38,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Great Barrier Reef di Australia adalah struktur hidup terbesar di Bumi yang bisa dilihat dari luar angkasa."
+  },
+  {
+    "id": 39,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Novel terpanjang di dunia adalah 'À la recherche du temps perdu' karya Marcel Proust dengan 1,2 juta kata."
+  },
+  {
+    "id": 40,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "B.J. Habibie adalah pemegang 46 paten di bidang aeronautika sebelum menjadi presiden RI."
+  },
+  {
+    "id": 41,
+    "kategori": "Musik",
+    "fakta": "Lagu 'Despacito' menjadi video pertama di YouTube yang mencapai 7 miliar views pada 2021."
+  },
+  {
+    "id": 42,
+    "kategori": "Religi",
+    "fakta": "Kitab suci Hindu, Mahabharata, adalah karya sastra terpanjang di dunia dengan 200.000 baris syair."
+  },
+  {
+    "id": 43,
+    "kategori": "Otomotif",
+    "fakta": "Mobil listrik pertama dibuat pada 1884, jauh sebelum mobil bensin populer."
+  },
+  {
+    "id": 44,
+    "kategori": "Gadget",
+    "fakta": "Rata-rata orang mengecek ponselnya 58 kali sehari dengan 30 kali saat jam kerja."
+  },
+  {
+    "id": 45,
+    "kategori": "Politik",
+    "fakta": "Indonesia adalah negara demokrasi terbesar ketiga di dunia setelah India dan Amerika Serikat."
+  },
+  {
+    "id": 46,
+    "kategori": "Negara",
+    "fakta": "Rusia memiliki 11 zona waktu berbeda, yang terbanyak di dunia."
+  },
+  {
+    "id": 47,
+    "kategori": "Hewan",
+    "fakta": "Cumi-cumi raksasa memiliki mata sebesar piring makan (30 cm diameter), yang terbesar di dunia hewan."
+  },
+  {
+    "id": 48,
+    "kategori": "Luar Angkasa",
+    "fakta": "Astronot di ISS melihat matahari terbit dan terbenam 16 kali dalam 24 jam."
+  },
+  {
+    "id": 49,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Kornea mata adalah satu-satunya bagian tubuh manusia yang tidak mendapat suplai darah."
+  },
+  {
+    "id": 50,
+    "kategori": "Tumbuhan",
+    "fakta": "Rafflesia arnoldii dari Indonesia adalah bunga terbesar di dunia dengan diameter mencapai 1 meter."
+  },
+  {
+    "id": 51,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Dunia II adalah konflik paling mematikan dalam sejarah dengan 70-85 juta korban jiwa."
+  },
+  {
+    "id": 52,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Proklamasi Kemerdekaan RI awalnya direncanakan dibacakan di Lapangan Ikada (sekarang Monas)."
+  },
+  {
+    "id": 53,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "DNA manusia 50% identik dengan DNA pisang."
+  },
+  {
+    "id": 54,
+    "kategori": "Sains Umum",
+    "fakta": "Jika semua DNA dalam tubuh manusia direntangkan, bisa mencapai Pluto dan kembali ke Bumi."
+  },
+  {
+    "id": 55,
+    "kategori": "Geografi",
+    "fakta": "Ibu kota Indonesia akan pindah ke Nusantara di Kalimantan Timur, menjadi ibu kota pertama di khatulistiwa."
+  },
+  {
+    "id": 56,
+    "kategori": "Teknologi",
+    "fakta": "90% data di dunia diciptakan dalam 2 tahun terakhir saja (efek ledakan digital)."
+  },
+  {
+    "id": 57,
+    "kategori": "Seni & Budaya",
+    "fakta": "Batik Indonesia memiliki lebih dari 3.000 motif yang tercatat resmi."
+  },
+  {
+    "id": 58,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Rendang dinobatkan sebagai makanan terenak di dunia oleh CNN Travel pada 2011 dan 2017."
+  },
+  {
+    "id": 59,
+    "kategori": "Ekonomi",
+    "fakta": "Indonesia adalah ekonomi terbesar di ASEAN dan ke-16 di dunia (2023)."
+  },
+  {
+    "id": 60,
+    "kategori": "Olahraga",
+    "fakta": "Anthony Ginting menjadi atlet bulutangkis Indonesia pertama yang mengalahkan Lin Dan di Olimpiade (2016)."
+  },
+  {
+    "id": 61,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Danau Toba adalah danau vulkanik terbesar di dunia dengan luas 1.130 km²."
+  },
+  {
+    "id": 62,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Bahasa Indonesia memiliki 91% tingkat melek huruf, tertinggi di antara negara berkembang."
+  },
+  {
+    "id": 63,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Soekarno fasih berbahasa Belanda, Inggris, Prancis, Jerman, Arab, dan Jepang selain bahasa daerah."
+  },
+  {
+    "id": 64,
+    "kategori": "Musik",
+    "fakta": "Lagu 'Bengawan Solo' karya Gesang populer di Jepang dan diterjemahkan ke bahasa Jepang."
+  },
+  {
+    "id": 65,
+    "kategori": "Religi",
+    "fakta": "Masjid Istiqlal adalah masjid terbesar di Asia Tenggara dengan kapasitas 200.000 jamaah."
+  },
+  {
+    "id": 66,
+    "kategori": "Otomotif",
+    "fakta": "Jembatan Suramadu (Surabaya-Madura) adalah jembatan terpanjang di Indonesia (5.438 meter)."
+  },
+  {
+    "id": 67,
+    "kategori": "Gadget",
+    "fakta": "Pengguna internet Indonesia mencapai 212 juta pada 2023 (77% populasi)."
+  },
+  {
+    "id": 68,
+    "kategori": "Politik",
+    "fakta": "Pemilu 2019 di Indonesia adalah pemilu satu hari terbesar di dunia dengan 193 juta pemilih."
+  },
+  {
+    "id": 69,
+    "kategori": "Negara",
+    "fakta": "Indonesia adalah negara kepulauan terbesar di dunia dengan 17.504 pulau."
+  },
+  {
+    "id": 70,
+    "kategori": "Hewan",
+    "fakta": "Komodo memiliki bisa dalam air liurnya yang mencegah darah mangsa membeku."
+  },
+  {
+    "id": 71,
+    "kategori": "Luar Angkasa",
+    "fakta": "Bulan menjauh dari Bumi 3,8 cm per tahun karena efek pasang surut."
+  },
+  {
+    "id": 72,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Otak manusia menggunakan 20% oksigen tubuh meski hanya 2% dari berat badan."
+  },
+  {
+    "id": 73,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Jati meranggas daun di musim kemarau untuk menghemat air."
+  },
+  {
+    "id": 74,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Dinasti Tang di Cina (618-907) menyumbang 30% PDB dunia saat itu."
+  },
+  {
+    "id": 75,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Sumpah Pemuda 1928 pertama kali menggunakan istilah 'Indonesia Raya' untuk menyebut negara masa depan."
+  },
+  {
+    "id": 76,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Tubuh manusia mengganti 330 miliar sel setiap hari (setara dengan 1% dari total sel)."
+  },
+  {
+    "id": 77,
+    "kategori": "Sains Umum",
+    "fakta": "Kecepatan cahaya adalah 299.792 km/detik - bisa mengelilingi Bumi 7,5 kali dalam 1 detik."
+  },
+  {
+    "id": 78,
+    "kategori": "Geografi",
+    "fakta": "Gunung Everest tumbuh 4 mm lebih tinggi setiap tahun karena pergerakan lempeng tektonik."
+  },
+  {
+    "id": 79,
+    "kategori": "Teknologi",
+    "fakta": "AI AlphaGo mengalahkan juara dunia Go Lee Sedol pada 2016, 10 tahun lebih awal dari prediksi ahli."
+  },
+  {
+    "id": 80,
+    "kategori": "Seni & Budaya",
+    "fakta": "Tari Saman dari Aceh memecahkan rekor Guinness sebagai tarian dengan penari terbanyak (12.262 orang)."
+  },
+  {
+    "id": 81,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Indonesia adalah produsen minyak kelapa sawit terbesar dunia (60% pasokan global)."
+  },
+  {
+    "id": 82,
+    "kategori": "Ekonomi",
+    "fakta": "UMKM menyumbang 61% PDB Indonesia dan menyerap 97% tenaga kerja (2023)."
+  },
+  {
+    "id": 83,
+    "kategori": "Olahraga",
+    "fakta": "Tim bulutangkis Indonesia memenangkan lebih banyak medali emas Olimpiade daripada cabang olahraga lain."
+  },
+  {
+    "id": 84,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Coral Triangle di Indonesia adalah pusat keanekaragaman hayati laut terkaya di dunia."
+  },
+  {
+    "id": 85,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Ejaan Bahasa Indonesia telah mengalami 4 kali perubahan sejak 1901."
+  },
+  {
+    "id": 86,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "R.A. Kartini menulis surat dalam bahasa Belanda yang kemudian diterjemahkan ke Bahasa Indonesia."
+  },
+  {
+    "id": 87,
+    "kategori": "Musik",
+    "fakta": "Angklung telah diakui UNESCO sebagai Warisan Budaya Dunia sejak 2010."
+  },
+  {
+    "id": 88,
+    "kategori": "Religi",
+    "fakta": "Candi Borobudur memiliki 504 arca Buddha dan 2.672 panel relief."
+  },
+  {
+    "id": 89,
+    "kategori": "Otomotif",
+    "fakta": "Jalan Tol Trans-Jawa (1.167 km) adalah jaringan tol terpanjang di Asia Tenggara."
+  },
+  {
+    "id": 90,
+    "kategori": "Gadget",
+    "fakta": "TikTok adalah aplikasi paling banyak diunduh di Indonesia sepanjang 2023."
+  },
+  {
+    "id": 91,
+    "kategori": "Politik",
+    "fakta": "Indonesia adalah pendiri ASEAN bersama 4 negara lainnya pada 8 Agustus 1967."
+  },
+  {
+    "id": 92,
+    "kategori": "Negara",
+    "fakta": "Papua Nugini adalah satu-satunya negara yang berbatasan darat dengan Indonesia (Pulau Papua)."
+  },
+  {
+    "id": 93,
+    "kategori": "Hewan",
+    "fakta": "Burung Maleo hanya ada di Sulawesi dan bisa mengerami telurnya dengan panas vulkanik."
+  },
+  {
+    "id": 94,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit pertama Indonesia, Palapa A1 diluncurkan 1976, membuat Indonesia negara berkembang kedua yang memiliki satelit."
+  },
+  {
+    "id": 95,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Sidik lidah setiap manusia unik seperti sidik jari."
+  },
+  {
+    "id": 96,
+    "kategori": "Tumbuhan",
+    "fakta": "Kantong semar (Nepenthes) di Kalimantan bisa menjebak dan mencerna tikus kecil."
+  },
+  {
+    "id": 97,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Seratus Tahun antara Inggris dan Prancis sebenarnya berlangsung 116 tahun (1337-1453)."
+  },
+  {
+    "id": 98,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Naskah asli Proklamasi ditulis tangan oleh Soekarno dan diketik oleh Sayuti Melik."
+  },
+  {
+    "id": 99,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Virus flu biasa bisa bertahan di permukaan benda hingga 48 jam."
+  },
+  {
+    "id": 100,
+    "kategori": "Sains Umum",
+    "fakta": "Jika Bumi seukuran kelereng, Matahari akan sebesar lapangan sepak bola dengan jarak 2,8 km darinya."
+  },
+  {
+    "id": 101,
+    "kategori": "Hewan",
+    "fakta": "Paus biru adalah hewan terbesar yang pernah ada, bahkan lebih besar dari dinosaurus terbesar sekalipun."
+  },
+  {
+    "id": 102,
+    "kategori": "Luar Angkasa",
+    "fakta": "Galaksi Bima Sakti diperkirakan mengandung 100–400 miliar bintang."
+  },
+  {
+    "id": 103,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Kulit manusia sepenuhnya beregenerasi setiap 27 hari."
+  },
+  {
+    "id": 104,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon kelapa dapat menempuh jarak ribuan kilometer melalui laut dan masih bisa tumbuh di pantai baru."
+  },
+  {
+    "id": 105,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Cleopatra hidup lebih dekat dengan zaman kita sekarang daripada dengan pembangunan Piramida Agung Giza."
+  },
+  {
+    "id": 106,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Kerajaan Sriwijaya pernah menjadi pusat pembelajaran agama Buddha terbesar di Asia Tenggara."
+  },
+  {
+    "id": 107,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Otak manusia dapat menghasilkan listrik cukup untuk menyalakan bola lampu kecil."
+  },
+  {
+    "id": 108,
+    "kategori": "Sains Umum",
+    "fakta": "Jika Bumi tidak berputar, satu hari akan berlangsung selama 6 bulan."
+  },
+  {
+    "id": 109,
+    "kategori": "Geografi",
+    "fakta": "Antartika adalah gurun terbesar di dunia karena curah hujannya sangat rendah."
+  },
+  {
+    "id": 110,
+    "kategori": "Teknologi",
+    "fakta": "Komputer kuantum dapat memecahkan masalah dalam hitungan menit yang membutuhkan ribuan tahun bagi komputer biasa."
+  },
+  {
+    "id": 111,
+    "kategori": "Seni & Budaya",
+    "fakta": "Lukisan 'The Scream' oleh Edvard Munch sebenarnya menggambarkan letusan gunung Krakatau tahun 1883."
+  },
+  {
+    "id": 112,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Tempe adalah satu-satunya makanan fermentasi kedelai yang berasal dari Indonesia."
+  },
+  {
+    "id": 113,
+    "kategori": "Ekonomi",
+    "fakta": "Cryptocurrency pertama di dunia bukan Bitcoin, melainkan 'DigiCash' yang dibuat tahun 1989."
+  },
+  {
+    "id": 114,
+    "kategori": "Olahraga",
+    "fakta": "Lionel Messi memegang rekor sebagai pencetak gol terbanyak dalam satu tahun kalender (91 gol pada 2012)."
+  },
+  {
+    "id": 115,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Hutan hujan Amazon adalah rumah bagi 10% spesies yang dikenal di Bumi."
+  },
+  {
+    "id": 116,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Bahasa Indonesia adalah bahasa resmi ke-10 yang paling banyak digunakan di internet."
+  },
+  {
+    "id": 117,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Nikola Tesla pernah menolak hadiah Nobel karena tidak ingin berbagi dengan Thomas Edison."
+  },
+  {
+    "id": 118,
+    "kategori": "Musik",
+    "fakta": "Lagu 'Yesterday' oleh The Beatles adalah lagu paling sering di-cover dalam sejarah musik."
+  },
+  {
+    "id": 119,
+    "kategori": "Religi",
+    "fakta": "Kitab suci Buddha, Tripitaka, ditulis di daun lontar dan merupakan teks agama terpanjang di dunia."
+  },
+  {
+    "id": 120,
+    "kategori": "Otomotif",
+    "fakta": "Mobil tercepat di dunia (SSC Tuatara) mencapai kecepatan 532 km/jam."
+  },
+  {
+    "id": 121,
+    "kategori": "Gadget",
+    "fakta": "Smartphone pertama dengan kamera adalah Sharp J-SH04 (2000), hanya 0,1 MP."
+  },
+  {
+    "id": 122,
+    "kategori": "Politik",
+    "fakta": "Indonesia adalah negara dengan populasi Muslim terbesar di dunia (230 juta)."
+  },
+  {
+    "id": 123,
+    "kategori": "Negara",
+    "fakta": "Kanada memiliki garis pantai terpanjang di dunia (202.080 km)."
+  },
+  {
+    "id": 124,
+    "kategori": "Hewan",
+    "fakta": "Gurita memiliki 9 otak (1 pusat dan 8 di tentakel) serta 3 jantung."
+  },
+  {
+    "id": 125,
+    "kategori": "Luar Angkasa",
+    "fakta": "Black hole terbesar yang diketahui (TON 618) memiliki massa 66 miliar kali Matahari."
+  },
+  {
+    "id": 126,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Usus kecil manusia panjangnya sekitar 6 meter jika direntangkan."
+  },
+  {
+    "id": 127,
+    "kategori": "Tumbuhan",
+    "fakta": "Bunga bangkai (Amorphophallus titanum) bisa mencapai tinggi 3 meter dan berbau seperti daging busuk."
+  },
+  {
+    "id": 128,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Dingin disebut 'dingin' karena tidak ada pertempuran langsung antara AS dan USSR."
+  },
+  {
+    "id": 129,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Sumpah Palapa Gajah Mada (1336) adalah deklarasi politik pertama tentang kesatuan Nusantara."
+  },
+  {
+    "id": 130,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Seseorang bisa kehilangan 40% massa tubuh dan masih bertahan hidup (kebanyakan lemak dan otot)."
+  },
+  {
+    "id": 131,
+    "kategori": "Sains Umum",
+    "fakta": "Jika semua air di atmosfer jatuh sekaligus, permukaan Bumi akan tergenang hanya 2,5 cm."
+  },
+  {
+    "id": 132,
+    "kategori": "Geografi",
+    "fakta": "Gunung Rinjani di Lombok memiliki kaldera terbesar kedua di dunia."
+  },
+  {
+    "id": 133,
+    "kategori": "Teknologi",
+    "fakta": "Internet membutuhkan 50 juta tenaga kuda untuk terus beroperasi di seluruh dunia."
+  },
+  {
+    "id": 134,
+    "kategori": "Seni & Budaya",
+    "fakta": "Tari Kecak dari Bali awalnya diciptakan untuk film 'Island of Demons' tahun 1930-an."
+  },
+  {
+    "id": 135,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Indonesia adalah produsen vanili terbesar kedua di dunia setelah Madagaskar."
+  },
+  {
+    "id": 136,
+    "kategori": "Ekonomi",
+    "fakta": "GoTo (Gojek-Tokopedia) adalah startup decacorn pertama asli Indonesia (nilai >$10 miliar)."
+  },
+  {
+    "id": 137,
+    "kategori": "Olahraga",
+    "fakta": "Pebulutangkis Indonesia, Rudi Hartono, memegang rekor 8 kali juara All England (1968-1976)."
+  },
+  {
+    "id": 138,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Indonesia memiliki 17% terumbu karang dunia, terbesar kedua setelah Australia."
+  },
+  {
+    "id": 139,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Kamus Besar Bahasa Indonesia (KBBI) edisi terbaru memuat lebih dari 127.000 entri."
+  },
+  {
+    "id": 140,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Ki Hajar Dewantara menciptakan konsep 'Tut Wuri Handayani' saat diasingkan di Belanda."
+  },
+  {
+    "id": 141,
+    "kategori": "Musik",
+    "fakta": "Gamelan Jawa telah memengaruhi musik klasik Barat, termasuk karya Claude Debussy."
+  },
+  {
+    "id": 142,
+    "kategori": "Religi",
+    "fakta": "Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia."
+  },
+  {
+    "id": 143,
+    "kategori": "Otomotif",
+    "fakta": "Jalur kereta api pertama di Indonesia dibangun tahun 1867 antara Semarang dan Tanggung."
+  },
+  {
+    "id": 144,
+    "kategori": "Gadget",
+    "fakta": "Pengguna WhatsApp di Indonesia adalah yang terbesar kedua di dunia setelah India."
+  },
+  {
+    "id": 145,
+    "kategori": "Politik",
+    "fakta": "Pancasila hampir diganti dengan 'Trisila' atau 'Ekasila' dalam sidang BPUPKI 1945."
+  },
+  {
+    "id": 146,
+    "kategori": "Negara",
+    "fakta": "Monako adalah negara dengan kepadatan penduduk tertinggi di dunia (19.000/km²)."
+  },
+  {
+    "id": 147,
+    "kategori": "Hewan",
+    "fakta": "Burung Cendrawasih hanya ditemukan di Papua dan pulau sekitarnya."
+  },
+  {
+    "id": 148,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit LAPAN-A1 adalah satelit pertama yang sepenuhnya dibuat oleh insinyur Indonesia."
+  },
+  {
+    "id": 149,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Kuku jari tangan tumbuh 3-4 kali lebih cepat daripada kuku jari kaki."
+  },
+  {
+    "id": 150,
+    "kategori": "Tumbuhan",
+    "fakta": "Kayu ulin dari Kalimantan disebut 'besi hutan' karena kekuatannya dan tahan air laut."
+  },
+  {
+    "id": 151,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Dunia I disebut 'Great War' sebelum ada Perang Dunia II."
+  },
+  {
+    "id": 152,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Bendera Merah Putih pertama kali dikibarkan sebagai bendera nasional pada 17 Agustus 1945."
+  },
+  {
+    "id": 153,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Senyum hanya menggunakan 17 otot wajah, sedangkan cemberut menggunakan 43 otot."
+  },
+  {
+    "id": 154,
+    "kategori": "Sains Umum",
+    "fakta": "Gaya gravitasi di Kutub lebih kuat daripada di Khatulistiwa karena Bumi tidak bulat sempurna."
+  },
+  {
+    "id": 155,
+    "kategori": "Geografi",
+    "fakta": "Danau Sentani di Papua adalah danau terbesar di Indonesia bagian timur."
+  },
+  {
+    "id": 156,
+    "kategori": "Teknologi",
+    "fakta": "Transistor dalam chip komputer sekarang hanya setebal 5 nanometer (1/10.000 rambut manusia)."
+  },
+  {
+    "id": 157,
+    "kategori": "Seni & Budaya",
+    "fakta": "Reog Ponorogo menggunakan topeng harimau seberat 30-40 kg yang digigit penari."
+  },
+  {
+    "id": 158,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Indonesia adalah pengekspor kopi terbesar keempat di dunia."
+  },
+  {
+    "id": 159,
+    "kategori": "Ekonomi",
+    "fakta": "Ekonomi digital Indonesia diprediksi mencapai $130 miliar pada 2025."
+  },
+  {
+    "id": 160,
+    "kategori": "Olahraga",
+    "fakta": "Indonesia pernah menjadi tuan rumah Piala Thomas (turnamen bulutangkis pria) sebanyak 9 kali."
+  },
+  {
+    "id": 161,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Taman Nasional Komodo termasuk dalam New 7 Wonders of Nature."
+  },
+  {
+    "id": 162,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Cerita Panji dari Jawa Timur memengaruhi sastra dan seni di seluruh Asia Tenggara."
+  },
+  {
+    "id": 163,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Tan Malaka adalah bapak republik yang merancang konsep negara Indonesia sebelum kemerdekaan."
+  },
+  {
+    "id": 164,
+    "kategori": "Musik",
+    "fakta": "Keroncong adalah genre musik khas Indonesia yang dipengaruhi Portugis."
+  },
+  {
+    "id": 165,
+    "kategori": "Religi",
+    "fakta": "Masjid Menara Kudus memiliki arsitektur unik perpaduan Hindu dan Islam."
+  },
+  {
+    "id": 166,
+    "kategori": "Otomotif",
+    "fakta": "Tol Laut Indonesia adalah program pengiriman barang terbesar di Asia Tenggara."
+  },
+  {
+    "id": 167,
+    "kategori": "Gadget",
+    "fakta": "Pengguna TikTok di Indonesia menghabiskan rata-rata 32,3 jam per bulan (2023)."
+  },
+  {
+    "id": 168,
+    "kategori": "Politik",
+    "fakta": "Indonesia adalah anggota pendiri Gerakan Non-Blok (1961)."
+  },
+  {
+    "id": 169,
+    "kategori": "Negara",
+    "fakta": "Vatikan adalah negara dengan populasi terkecil di dunia (sekitar 800 penduduk)."
+  },
+  {
+    "id": 170,
+    "kategori": "Hewan",
+    "fakta": "Anoa dari Sulawesi adalah kerbau terkecil di dunia, setinggi 1 meter."
+  },
+  {
+    "id": 171,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit BRIsat (2016) adalah satelit komersial pertama milik bank di dunia (milik BRI)."
+  },
+  {
+    "id": 172,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Satu sel darah merah mengelilingi seluruh tubuh dalam 20 detik."
+  },
+  {
+    "id": 173,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Eboni dari Sulawesi adalah kayu hitam termahal di Indonesia."
+  },
+  {
+    "id": 174,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Vietnam berlangsung selama 19 tahun 5 bulan (1955-1975)."
+  },
+  {
+    "id": 175,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Naskah Proklamasi asli sempat hilang selama 20 tahun sebelum ditemukan di rumah seorang wartawan."
+  },
+  {
+    "id": 176,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Jantung manusia berdetak lebih dari 3 miliar kali dalam seumur hidup rata-rata."
+  },
+  {
+    "id": 177,
+    "kategori": "Sains Umum",
+    "fakta": "Petir bisa mencapai suhu 30.000°C—lima kali lebih panas dari permukaan matahari."
+  },
+  {
+    "id": 178,
+    "kategori": "Geografi",
+    "fakta": "Selat Sunda adalah salah satu selat tersibuk di dunia untuk pelayaran internasional."
+  },
+  {
+    "id": 179,
+    "kategori": "Teknologi",
+    "fakta": "Indonesia memiliki lebih dari 2.000 startup pada 2023, terbanyak di ASEAN."
+  },
+  {
+    "id": 180,
+    "kategori": "Seni & Budaya",
+    "fakta": "Wayang Beber dari Pacitan adalah seni wayang tertua di Jawa yang nyaris punah."
+  },
+  {
+    "id": 181,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Sambal adalah bumbu wajib bagi 95% rumah tangga Indonesia (Survei 2022)."
+  },
+  {
+    "id": 182,
+    "kategori": "Ekonomi",
+    "fakta": "Bank Indonesia adalah bank sentral pertama di Asia yang menerbitkan uang digital (2023)."
+  },
+  {
+    "id": 183,
+    "kategori": "Olahraga",
+    "fakta": "Indonesia pernah menjadi juara umum SEA Games 7 kali (terakhir 2011)."
+  },
+  {
+    "id": 184,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Gunung Tambora meletus 1815 menyebabkan 'Tahun Tanpa Musim Panas' di Eropa."
+  },
+  {
+    "id": 185,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Surat-surat Kartini ditulis dalam Bahasa Belanda karena pendidikan formalnya menggunakan bahasa itu."
+  },
+  {
+    "id": 186,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "W.R. Soepratman menciptakan lagu Indonesia Raya dalam bahasa Melayu untuk menyatukan semua suku."
+  },
+  {
+    "id": 187,
+    "kategori": "Musik",
+    "fakta": "Dangdut adalah genre musik yang secara resmi diakui UNESCO sebagai warisan budaya Indonesia."
+  },
+  {
+    "id": 188,
+    "kategori": "Religi",
+    "fakta": "Waisak di Borobudur adalah perayaan agama Buddha terbesar di Indonesia."
+  },
+  {
+    "id": 189,
+    "kategori": "Otomotif",
+    "fakta": "Jalan Tol Trans-Sumatra (2.765 km) adalah tol terpanjang di Indonesia."
+  },
+  {
+    "id": 190,
+    "kategori": "Gadget",
+    "fakta": "Pengguna Shopee di Indonesia adalah yang terbanyak di dunia (2023)."
+  },
+  {
+    "id": 191,
+    "kategori": "Politik",
+    "fakta": "Pemilu 2024 adalah pemilu pertama di Indonesia dengan sistem pemungutan suara online terbatas."
+  },
+  {
+    "id": 192,
+    "kategori": "Negara",
+    "fakta": "Nauru adalah negara pulau terkecil di dunia (21 km²)."
+  },
+  {
+    "id": 193,
+    "kategori": "Hewan",
+    "fakta": "Burung Maleo mengubur telurnya di pasir panas vulkanik untuk menetaskan anaknya."
+  },
+  {
+    "id": 194,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit SATRIA-1 (2023) adalah satelit internet tercepat di Indonesia."
+  },
+  {
+    "id": 195,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Paru-paru kiri lebih kecil dari kanan karena harus memberi ruang untuk jantung."
+  },
+  {
+    "id": 196,
+    "kategori": "Tumbuhan",
+    "fakta": "Kayu cendana dari Nusa Tenggara adalah salah satu kayu termahal di dunia."
+  },
+  {
+    "id": 197,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Enam Hari (1967) antara Israel dan negara Arab hanya berlangsung 132 jam."
+  },
+  {
+    "id": 198,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Naskah asli UUD 1945 ditulis tangan oleh Soepomo menggunakan mesin ketik manual."
+  },
+  {
+    "id": 199,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Mendengkur bisa mencapai 90 desibel—setara dengan suara blender."
+  },
+  {
+    "id": 200,
+    "kategori": "Sains Umum",
+    "fakta": "Jika semua DNA di tubuh manusia direntangkan, panjangnya bisa mencapai bulan dan kembali 6.000 kali."
+  },
+  {
+    "id": 201,
+    "kategori": "Hewan",
+    "fakta": "Lumba-lumba bisa mengenali diri mereka sendiri di cermin, menunjukkan tingkat kesadaran diri yang tinggi."
+  },
+  {
+    "id": 202,
+    "kategori": "Luar Angkasa",
+    "fakta": "Magnetar adalah jenis bintang neutron dengan medan magnet terkuat di alam semesta - 1 triliun kali lebih kuat dari Bumi."
+  },
+  {
+    "id": 203,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Kelenjar ludah manusia menghasilkan sekitar 1-2 liter air liur setiap hari."
+  },
+  {
+    "id": 204,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Jati di Jawa bisa hidup lebih dari 100 tahun dan semakin tua semakin kuat kayunya."
+  },
+  {
+    "id": 205,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Paling Singkat dalam sejarah adalah antara Inggris dan Zanzibar pada 1896, hanya berlangsung 38 menit."
+  },
+  {
+    "id": 206,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Peristiwa Bandung Lautan Api (1946) adalah strategi bumi hangus pertama yang dilakukan pejuang Indonesia melawan Belanda."
+  },
+  {
+    "id": 207,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Sel darah putih hanya hidup sekitar 13-20 hari, sedangkan sel darah merah bisa hidup 120 hari."
+  },
+  {
+    "id": 208,
+    "kategori": "Sains Umum",
+    "fakta": "Di dasar laut terdalam (Palung Mariana), tekanan air setara dengan 50 pesawat jet komersial bertumpuk di atas Anda."
+  },
+  {
+    "id": 209,
+    "kategori": "Geografi",
+    "fakta": "Papua Nugini memiliki lebih dari 800 bahasa daerah, menjadikannya negara dengan keragaman bahasa tertinggi di dunia."
+  },
+  {
+    "id": 210,
+    "kategori": "Teknologi",
+    "fakta": "Volume data internet global pada 2025 diprediksi mencapai 175 zettabytes (1 zettabyte = 1 triliun gigabyte)."
+  },
+  {
+    "id": 211,
+    "kategori": "Seni & Budaya",
+    "fakta": "Tari Pendet dari Bali awalnya adalah tarian penyambutan untuk dewa-dewi dalam upacara agama Hindu."
+  },
+  {
+    "id": 212,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Indonesia adalah produsen pala terbesar di dunia, menyumbang 60% pasokan global."
+  },
+  {
+    "id": 213,
+    "kategori": "Ekonomi",
+    "fakta": "Gojek menjadi startup pertama dari Asia Tenggara yang masuk daftar Fortune 500 (2021)."
+  },
+  {
+    "id": 214,
+    "kategori": "Olahraga",
+    "fakta": "Indonesia memenangkan medali emas Olimpiade pertama melalui cabang panahan di Seoul 1988."
+  },
+  {
+    "id": 215,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Kawasan Karst Sangkulirang-Mangkalihat di Kalimantan Timur memiliki lukisan gua berusia 40.000 tahun."
+  },
+  {
+    "id": 216,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Novel 'Layar Terkembang' karya Sutan Takdir Alisjahbana (1936) dianggap sebagai pelopor sastra modern Indonesia."
+  },
+  {
+    "id": 217,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Cut Nyak Dhien memimpin perlawanan terhadap Belanda di Aceh selama 25 tahun sebelum ditangkap pada 1901."
+  },
+  {
+    "id": 218,
+    "kategori": "Musik",
+    "fakta": "Lagu 'Indonesia Pusaka' karya Ismail Marzuki awalnya berjudul 'Indonesia Tanah Airku' (1949)."
+  },
+  {
+    "id": 219,
+    "kategori": "Religi",
+    "fakta": "Masjid Raya Baiturrahman di Aceh dibangun pada 1612 dan selamat dari tsunami 2004."
+  },
+  {
+    "id": 220,
+    "kategori": "Otomotif",
+    "fakta": "Mobil listrik pertama Indonesia, 'Selo', dikembangkan oleh PT LEN Industri sejak 2019."
+  },
+  {
+    "id": 221,
+    "kategori": "Gadget",
+    "fakta": "Pengguna aktif internet Indonesia mencapai 212,9 juta pada 2023 (77,02% populasi)."
+  },
+  {
+    "id": 222,
+    "kategori": "Politik",
+    "fakta": "Pemilu 2024 adalah pemilu pertama di Indonesia yang melibatkan 5 partai baru hasil verifikasi administrasi."
+  },
+  {
+    "id": 223,
+    "kategori": "Negara",
+    "fakta": "Monako memiliki GDP per kapita tertinggi di dunia (US$185.741 pada 2023)."
+  },
+  {
+    "id": 224,
+    "kategori": "Hewan",
+    "fakta": "Burung rangkong (enggang) memainkan peran penting dalam ekosistem hutan Kalimantan sebagai penyebar biji."
+  },
+  {
+    "id": 225,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit LAPAN-A2/ORARI adalah satelit pertama Indonesia yang sepenuhnya dirancang dan dirakit oleh anak bangsa."
+  },
+  {
+    "id": 226,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Hati manusia adalah satu-satunya organ yang bisa beregenerasi sepenuhnya meski 75%-nya diangkat."
+  },
+  {
+    "id": 227,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Ulin (Eusideroxylon zwageri) di Kalimantan bisa hidup hingga 1.000 tahun."
+  },
+  {
+    "id": 228,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Salib berlangsung selama 196 tahun (1095-1291) melibatkan Kristen Eropa melawan Muslim Timur Tengah."
+  },
+  {
+    "id": 229,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Peristiwa 10 November 1945 di Surabaya menjadi simbol perlawanan rakyat Indonesia dan diperingati sebagai Hari Pahlawan."
+  },
+  {
+    "id": 230,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Satu tetes darah mengandung sekitar 5 juta sel darah merah dan 10.000 sel darah putih."
+  },
+  {
+    "id": 231,
+    "kategori": "Sains Umum",
+    "fakta": "Jika semua air di Bumi dikumpulkan dalam satu bola, diameternya hanya 1.385 km (lebih kecil dari bulan)."
+  },
+  {
+    "id": 232,
+    "kategori": "Geografi",
+    "fakta": "Danau Poso di Sulawesi Tengah adalah danau terdalam ketiga di Indonesia (450 meter)."
+  },
+  {
+    "id": 233,
+    "kategori": "Teknologi",
+    "fakta": "Kecerdasan buatan AlphaFold dari Google bisa memprediksi struktur protein dengan akurasi 92%."
+  },
+  {
+    "id": 234,
+    "kategori": "Seni & Budaya",
+    "fakta": "Tenun ikat Sumba terkenal dengan motif 'kuda laut' dan 'naga' yang bernilai spiritual tinggi."
+  },
+  {
+    "id": 235,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Indonesia adalah pengekspor cokelat terbesar ketiga di dunia setelah Pantai Gading dan Ghana."
+  },
+  {
+    "id": 236,
+    "kategori": "Ekonomi",
+    "fakta": "Ekonomi kreatif Indonesia menyumbang 7,4% PDB nasional (2023) dengan subsektor kuliner terbesar."
+  },
+  {
+    "id": 237,
+    "kategori": "Olahraga",
+    "fakta": "Indonesia pernah menjadi tuan rumah Asian Games dua kali (1962 dan 2018)."
+  },
+  {
+    "id": 238,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Taman Nasional Lorentz di Papua adalah Situs Warisan Dunia UNESCO dengan ekosistem lengkap dari salju ke mangrove."
+  },
+  {
+    "id": 239,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Cerita rakyat Malin Kundang dari Sumatera Barat mengajarkan moral tentang durhaka kepada orang tua."
+  },
+  {
+    "id": 240,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Mohammad Hatta adalah wakil presiden pertama Indonesia yang fasih berbahasa Belanda, Inggris, Jerman, dan Prancis."
+  },
+  {
+    "id": 241,
+    "kategori": "Musik",
+    "fakta": "Kolintang dari Minahasa adalah alat musik perkusi kayu yang bisa memainkan tangga nada diatonik dan kromatik."
+  },
+  {
+    "id": 242,
+    "kategori": "Religi",
+    "fakta": "Candi Muaro Jambi di Sumatera adalah kompleks candi Buddha terluas di Asia Tenggara (3.981 hektar)."
+  },
+  {
+    "id": 243,
+    "kategori": "Otomotif",
+    "fakta": "Jalur kereta api pertama di Indonesia menghubungkan Semarang-Tanggung (1867) sepanjang 25 km."
+  },
+  {
+    "id": 244,
+    "kategori": "Gadget",
+    "fakta": "Pengguna aktif media sosial di Indonesia mencapai 167 juta (2023), terbesar ke-4 di dunia."
+  },
+  {
+    "id": 245,
+    "kategori": "Politik",
+    "fakta": "Indonesia adalah negara demokrasi dengan sistem pemilu paling kompleks - memilih 5 jenis wakil rakyat sekaligus."
+  },
+  {
+    "id": 246,
+    "kategori": "Negara",
+    "fakta": "Singapura adalah negara dengan kepadatan penduduk tertinggi kedua di dunia (8.358/km²)."
+  },
+  {
+    "id": 247,
+    "kategori": "Hewan",
+    "fakta": "Tarsius, primata terkecil di dunia dari Sulawesi, memiliki mata lebih besar daripada otaknya."
+  },
+  {
+    "id": 248,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit Nusantara Satu (2019) adalah satelit komersial pertama Indonesia dengan teknologi high-throughput."
+  },
+  {
+    "id": 249,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Usus buntu mungkin berfungsi sebagai 'rumah aman' bagi bakteri baik saat terjadi infeksi pencernaan."
+  },
+  {
+    "id": 250,
+    "kategori": "Tumbuhan",
+    "fakta": "Bunga Edelweis Jawa hanya tumbuh di ketinggian di atas 2.000 mdpl dan bisa hidup hingga 100 tahun."
+  },
+  {
+    "id": 251,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Peloponnesia antara Athena dan Sparta (431-404 SM) adalah perang saudara pertama yang tercatat dalam sejarah."
+  },
+  {
+    "id": 252,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Pertempuran Ambarawa (1945) melahirkan simbolisasi 'Palagan Ambarawa' dan Hari Infanteri TNI AD."
+  },
+  {
+    "id": 253,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Satu sel otak manusia bisa terhubung dengan 40.000 sel otak lainnya membentuk jaringan kompleks."
+  },
+  {
+    "id": 254,
+    "kategori": "Sains Umum",
+    "fakta": "Jika Bumi berhenti berputar tiba-tiba, semua benda di permukaan akan terlempar ke timur dengan kecepatan 1.600 km/jam."
+  },
+  {
+    "id": 255,
+    "kategori": "Geografi",
+    "fakta": "Gunung Kerinci di Sumatera adalah gunung berapi tertinggi di Indonesia (3.805 mdpl)."
+  },
+  {
+    "id": 256,
+    "kategori": "Teknologi",
+    "fakta": "Komputer kuantum Google 'Sycamore' menyelesaikan perhitungan dalam 200 detik yang butuh 10.000 tahun oleh superkomputer."
+  },
+  {
+    "id": 257,
+    "kategori": "Seni & Budaya",
+    "fakta": "Tari Saman dari Aceh masuk Guinness World Records sebagai tarian dengan penari terbanyak (12.262 penari)."
+  },
+  {
+    "id": 258,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Indonesia adalah produsen minyak kelapa terbesar di dunia (80% pasokan global)."
+  },
+  {
+    "id": 259,
+    "kategori": "Ekonomi",
+    "fakta": "Bank Indonesia adalah bank sentral pertama di dunia yang meluncurkan mata uang digital resmi (Digital Rupiah)."
+  },
+  {
+    "id": 260,
+    "kategori": "Olahraga",
+    "fakta": "Pebalap MotoGP dari Indonesia, Mario Aji, adalah juara Asia Talent Cup 2018 di usia 14 tahun."
+  },
+  {
+    "id": 261,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Taman Nasional Bunaken memiliki 390 spesies terumbu karang - lebih dari seluruh Karibia."
+  },
+  {
+    "id": 262,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Puisi 'Aku' karya Chairil Anwar (1943) menjadi simbol semangat perlawanan di masa penjajahan."
+  },
+  {
+    "id": 263,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Raden Saleh, pelukis Indonesia pertama yang diakui Eropa, adalah pelopor seni modern di Asia Tenggara."
+  },
+  {
+    "id": 264,
+    "kategori": "Musik",
+    "fakta": "Gamelan Degung dari Jawa Barat adalah salah satu ansambel gamelan paling kompleks dengan tangga nada pelog dan madenda."
+  },
+  {
+    "id": 265,
+    "kategori": "Religi",
+    "fakta": "Masjid Cheng Ho di Surabaya adalah masjid bernuansa Tionghoa pertama di Indonesia, dibangun 2002."
+  },
+  {
+    "id": 266,
+    "kategori": "Otomotif",
+    "fakta": "Jalan Tol Trans-Jawa sepanjang 1.167 km adalah jaringan tol terpanjang di Asia Tenggara."
+  },
+  {
+    "id": 267,
+    "kategori": "Gadget",
+    "fakta": "Pengguna aktif TikTok di Indonesia mencapai 113 juta (2023), terbesar kedua setelah AS."
+  },
+  {
+    "id": 268,
+    "kategori": "Politik",
+    "fakta": "Pancasila hampir diganti menjadi Trisila (Tuhan, Kebudayaan, Keadilan) atau Ekasila (Gotong Royong) dalam sidang BPUPKI."
+  },
+  {
+    "id": 269,
+    "kategori": "Negara",
+    "fakta": "Kepulauan Faroe (Denmark) memiliki populasi domba lebih banyak daripada manusia (70.000 vs 53.000)."
+  },
+  {
+    "id": 270,
+    "kategori": "Hewan",
+    "fakta": "Ikan arwana super red dari Kalimantan adalah salah satu ikan hias termahal di dunia."
+  },
+  {
+    "id": 271,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit LAPAN-A3/BRISat adalah satelit pertama Indonesia untuk pemantauan pertanian dan maritim."
+  },
+  {
+    "id": 272,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Bayi baru lahir memiliki 300 tulang yang akan menyatu menjadi 206 tulang saat dewasa."
+  },
+  {
+    "id": 273,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Kapur (Dryobalanops aromatica) di Sumatera menghasilkan kamper alami yang bernilai tinggi."
+  },
+  {
+    "id": 274,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Napoleon (1803-1815) mengubah peta Eropa dan mempopulerkan sistem metrik di seluruh dunia."
+  },
+  {
+    "id": 275,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Peristiwa Rengasdengklok (16 Agustus 1945) adalah upaya 'penculikan' Soekarno-Hatta oleh pemuda untuk mempercepat proklamasi."
+  },
+  {
+    "id": 276,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Seseorang bisa kehilangan 1 liter darah tanpa efek serius, tetapi kehilangan 2 liter sudah membahayakan nyawa."
+  },
+  {
+    "id": 277,
+    "kategori": "Sains Umum",
+    "fakta": "Di inti matahari, setiap detik 600 juta ton hidrogen berfusi menjadi 596 juta ton helium."
+  },
+  {
+    "id": 278,
+    "kategori": "Geografi",
+    "fakta": "Danau Maninjau di Sumatera Barat terbentuk dari letusan gunung api purba 52.000 tahun lalu."
+  },
+  {
+    "id": 279,
+    "kategori": "Teknologi",
+    "fakta": "6G diprediksi akan 100 kali lebih cepat dari 5G dengan kecepatan hingga 1 terabit per detik (2030)."
+  },
+  {
+    "id": 280,
+    "kategori": "Seni & Budaya",
+    "fakta": "Topeng Malangan dari Jawa Timur memiliki 9 karakter wajah yang mewakili sifat manusia."
+  },
+  {
+    "id": 281,
+    "kategori": "Makanan & Minuman",
+    "fakta": "Indonesia adalah pengekspor lada terbesar kedua di dunia setelah Vietnam."
+  },
+  {
+    "id": 282,
+    "kategori": "Ekonomi",
+    "fakta": "Pasar modal Indonesia termasuk 10 besar di Asia dengan kapitalisasi pasar Rp11.000 triliun (2023)."
+  },
+  {
+    "id": 283,
+    "kategori": "Olahraga",
+    "fakta": "Atlet panahan Indonesia pernah meraih medali perak Olimpiade 1988 dan medali emas SEA Games 22 kali."
+  },
+  {
+    "id": 284,
+    "kategori": "Alam & Lingkungan",
+    "fakta": "Taman Nasional Wakatobi memiliki 942 spesies ikan dan 750 spesies karang - tertinggi di dunia."
+  },
+  {
+    "id": 285,
+    "kategori": "Bahasa & Sastra",
+    "fakta": "Cerita Ramayana versi Jawa berbeda dengan versi India, menyesuaikan dengan budaya lokal."
+  },
+  {
+    "id": 286,
+    "kategori": "Tokoh Terkenal",
+    "fakta": "Agus Salim menguasai 9 bahasa asing dan menerjemahkan Al-Quran ke Bahasa Indonesia."
+  },
+  {
+    "id": 287,
+    "kategori": "Musik",
+    "fakta": "Kacapi suling dari Jawa Barat menggunakan tangga nada pelog dan slendro yang unik."
+  },
+  {
+    "id": 288,
+    "kategori": "Religi",
+    "fakta": "Pura Besakih di Bali disebut 'Pura Agung' karena terdiri dari 86 kompleks candi di lereng Gunung Agung."
+  },
+  {
+    "id": 289,
+    "kategori": "Otomotif",
+    "fakta": "Jalur kereta api Argo Parahyangan (Bandung-Jakarta) adalah jalur kereta pertama di Indonesia (1879)."
+  },
+  {
+    "id": 290,
+    "kategori": "Gadget",
+    "fakta": "Pengguna aktif Instagram di Indonesia mencapai 99,5 juta (2023), terbesar ke-4 di dunia."
+  },
+  {
+    "id": 291,
+    "kategori": "Politik",
+    "fakta": "Indonesia adalah anggota G20 dan diperkirakan akan masuk 5 besar ekonomi dunia pada 2045."
+  },
+  {
+    "id": 292,
+    "kategori": "Negara",
+    "fakta": "Liechtenstein adalah negara yang pernah 'menyerahkan perang' dengan 80 tentara dan kembali dengan 81 orang (karena dapat teman baru)."
+  },
+  {
+    "id": 293,
+    "kategori": "Hewan",
+    "fakta": "Kucing berkumis lebih dari 12 pasang cenderung menjadi pemburu yang lebih baik."
+  },
+  {
+    "id": 294,
+    "kategori": "Luar Angkasa",
+    "fakta": "Satelit SATRIA-1 (2023) adalah satelit multifungsi terbesar milik Indonesia dengan kapasitas 150 Gbps."
+  },
+  {
+    "id": 295,
+    "kategori": "Tubuh Manusia",
+    "fakta": "Kaki manusia memiliki 26 tulang, 33 sendi, dan lebih dari 100 otot, tendon, dan ligamen."
+  },
+  {
+    "id": 296,
+    "kategori": "Tumbuhan",
+    "fakta": "Pohon Sonokeling (Dalbergia latifolia) dari Jawa menghasilkan kayu termahal untuk mebel dan alat musik."
+  },
+  {
+    "id": 297,
+    "kategori": "Sejarah Dunia",
+    "fakta": "Perang Seratus Tahun antara Inggris dan Prancis sebenarnya berlangsung 116 tahun (1337-1453)."
+  },
+  {
+    "id": 298,
+    "kategori": "Sejarah Indonesia",
+    "fakta": "Naskah Proklamasi asli sempat hilang selama 20 tahun sebelum ditemukan di rumah seorang wartawan."
+  },
+  {
+    "id": 299,
+    "kategori": "Medis & Kesehatan",
+    "fakta": "Senyum bisa mengurangi hormon stres dan meningkatkan endorfin meski dipaksakan sekalipun."
+  },
+  {
+    "id": 300,
+    "kategori": "Sains Umum",
+    "fakta": "Jika semua manusia yang pernah hidup dikumpulkan, total beratnya hanya 0,01% dari berat Bumi."
+  }
+]  
