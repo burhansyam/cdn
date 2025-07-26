@@ -1,0 +1,505 @@
+<?php
+// Aplikasi Auto-Post WordPress Lengkap dengan PHP & Gemini + Google Trends Integration
+// Versi Final: Menggabungkan config asli dengan kriteria SEO yang lebih ketat.
+// Fitur:
+// - Auto-Teks SEO (Judul, Meta, URL, Keyword Density, Internal/External Link)
+// - Auto-Gambar dengan Alt Text
+// - Auto-Tag & Kategori
+// - Auto-Trend (Google Trends Indonesia)
+// =====================================================================
+
+// Nonaktifkan batas waktu eksekusi jika dijalankan dari command line atau cron
+set_time_limit(0);
+
+// Tampilkan semua error untuk debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Atur zona waktu ke Asia/Jakarta
+date_default_timezone_set('Asia/Jakarta');
+
+// --- PENGATURAN GLOBAL (SESUAI PERMINTAAN ASLI) ---
+
+// Kredensial WordPress
+$wp_config = [
+    'site_url'     => 'https://bur.my.id',
+    'username'     => 'kangpos',
+    'app_password' => 'LBdU 2TaA tqXF yyNx mksX jFNV',
+    'category_id'  => '1' // Opsional: Isi dengan ID kategori, misal: 3
+];
+
+// Konfigurasi Gemini API (Untuk Teks dan Gambar) - DIKEMBALIKAN SESUAI PERMINTAAN
+$gemini_config = [
+    'api_key'       => 'AIzaSyAJZy7iyrmPVJhyCQk62hAwoyfjmFb3TTk', // WAJIB: Isi dengan Gemini API Key Anda
+    'text_model'    => 'gemini-2.5-pro', // Model canggih untuk pembuatan artikel
+    'image_model'   => 'gemini-2.0-flash-preview-image-generation'
+];
+
+// Konfigurasi Konten & Gambar
+$content_config = [
+    'image_prompt_suffix'=> ', photorealistic, high quality, no text on picture', // Tambahan untuk prompt gambar
+    'image_width'        => 800,
+    'image_height'       => 450,
+    'max_slug_length'    => 80,  // DIPERBARUI: Disesuaikan dengan rekomendasi Rank Math
+];
+
+// Nama File & Direktori
+$keyword_file     = 'keywords.txt';
+$progress_file    = 'progress.txt';
+$history_file     = 'history.txt';
+$image_output_dir = 'images/'; // Pastikan direktori ini ada dan writable
+
+// URL RSS Feed Google Trends untuk Indonesia
+$google_trends_url = 'https://trends.google.co.id/trending/rss?geo=ID';
+
+// ==========================================================
+// --- FUNGSI-FUNGSI APLIKASI ---
+// ==========================================================
+
+function slugify($text, $max_length = 80) {
+    $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+    $text = preg_replace('~[^-\w]+~', '', $text);
+    $text = trim($text, '-');
+    $text = preg_replace('~-+~', '-', $text);
+    $text = strtolower($text);
+    if (empty($text)) {
+        return 'n-a';
+    }
+    // Pangkas slug jika terlalu panjang
+    if (strlen($text) > $max_length) {
+        $text = substr($text, 0, $max_length);
+        $text = rtrim($text, '-');
+    }
+    return $text;
+}
+
+function format_content_to_html($content) {
+    $content = preg_replace('/^### (.*$)/m', '<h3>$1</h3>', $content);
+    $content = preg_replace('/^## (.*$)/m', '<h2>$1</h2>', $content);
+    $content = preg_replace('/\*\*(.*?)\*\*/s', '<strong>$1</strong>', $content);
+    $content = preg_replace('/\[(.*?)\]\((.*?)\)/', '<a href="$2" target="_blank" rel="noopener noreferrer dofollow">$1</a>', $content);
+    $content = nl2br($content, false);
+    return $content;
+}
+
+function resize_image($source_path, $dest_path, $width, $height) {
+    echo "<p>Mengubah ukuran gambar ke {$width}x{$height}...</p>";
+    list($source_width, $source_height, $type) = getimagesize($source_path);
+    
+    switch ($type) {
+        case IMAGETYPE_JPEG: $source_image = imagecreatefromjpeg($source_path); break;
+        case IMAGETYPE_PNG: $source_image = imagecreatefrompng($source_path); break;
+        default: echo "<p>❌ Jenis file gambar tidak didukung.</p>"; return false;
+    }
+
+    $dest_image = imagecreatetruecolor($width, $height);
+    if ($type == IMAGETYPE_PNG) {
+        imagealphablending($dest_image, false); imagesavealpha($dest_image, true);
+        $transparent = imagecolorallocatealpha($dest_image, 255, 255, 255, 127);
+        imagefilledrectangle($dest_image, 0, 0, $width, $height, $transparent);
+    }
+    imagecopyresampled($dest_image, $source_image, 0, 0, 0, 0, $width, $height, $source_width, $source_height);
+    $success = imagepng($dest_image, $dest_path);
+    imagedestroy($source_image); imagedestroy($dest_image);
+    if ($success) { echo "<p>✅ Gambar berhasil diubah ukurannya.</p>"; return true; }
+    else { echo "<p>❌ Gagal menyimpan gambar.</p>"; return false; }
+}
+
+function get_latest_posts_for_internal_linking($config) {
+    echo "<p>Mengambil artikel terbaru untuk referensi tautan internal...</p>";
+    $api_url = $config['wp']['site_url'] . '/wp-json/wp/v2/posts?per_page=5&_fields=title,link';
+    $ch = curl_init($api_url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    if ($http_code == 200) {
+        $posts = json_decode($response, true);
+        if (!empty($posts)) {
+            $post_details = array_map(function($post) {
+                return "'" . $post['title']['rendered'] . "' (URL: " . $post['link'] . ")";
+            }, $posts);
+            echo "<p>✅ Ditemukan " . count($post_details) . " judul artikel.</p>";
+            return $post_details;
+        }
+    }
+    echo "<p>⚠️ Tidak dapat mengambil artikel terbaru.</p>";
+    return [];
+}
+
+/**
+ * DIPERBARUI: Prompt dirombak menjadi format checklist yang sangat ketat
+ * untuk memastikan semua kriteria SEO dari plugin terpenuhi.
+ */
+function generate_seo_content_from_gemini($keyword, $internal_link_options, $config) {
+    echo "<p>Membuat prompt SEO (format checklist) untuk Gemini...</p>";
+    
+    $internal_links_prompt = "- **Tautan Internal:** Tidak ada referensi artikel, jadi lewati langkah ini.";
+    if (!empty($internal_link_options)) {
+        $internal_links_prompt = "- **Tautan Internal:** Secara alami, masukkan satu tautan internal dalam format Markdown `[teks anchor](URL)` ke salah satu artikel yang paling relevan dari daftar ini: " . implode(", ", $internal_link_options);
+    }
+
+    $full_prompt = <<<PROMPT
+Anda adalah seorang editor dan penulis SEO ahli untuk WordPress yang menggunakan plugin Rank Math.
+Fokus Kata Kunci Utama: "{$keyword}"
+
+Tugas Anda adalah menghasilkan respons dalam format JSON valid yang berisi tiga kunci: "seo_title", "meta_description", dan "article_body".
+Patuhi **SEMUA** kriteria pada checklist berikut untuk memastikan artikel mendapat skor SEO hijau di Rank Math:
+
+**CHECKLIST KRITERIA SEO (WAJIB DIPATUHI):**
+
+- **`seo_title` (Judul SEO):**
+  - **WAJIB:** Harus mengandung Fokus Kata Kunci "{$keyword}".
+  - **WAJIB:** Letakkan Fokus Kata Kunci "{$keyword}" di awal judul.
+
+- **`meta_description` (Deskripsi Meta):**
+  - **WAJIB:** Harus mengandung Fokus Kata Kunci "{$keyword}".
+  - Panjang antara 150-160 karakter.
+
+- **`article_body` (Isi Artikel):**
+  - **Panjang Konten:** **WAJIB** tulis artikel dengan panjang minimal 600 kata.
+  - **Paragraf Awal:** Gunakan Fokus Kata Kunci "{$keyword}" dalam 10% pertama konten.
+  - **Subjudul:** Gunakan Fokus Kata Kunci "{$keyword}" setidaknya dalam satu subjudul (H2 atau H3). Format dengan `##` atau `###`.
+  - **Distribusi & Kepadatan:** Sebarkan Fokus Kata Kunci "{$keyword}" secara merata di seluruh konten. Targetkan kepadatan kata kunci sekitar 1%.
+  - **Tautan Eksternal:** Sertakan minimal satu tautan eksternal DoFollow ke sumber yang kredibel (misal: Wikipedia, situs berita terkemuka).
+  {$internal_links_prompt}
+
+Pastikan output Anda HANYA berupa JSON yang valid, tanpa teks atau penjelasan tambahan di luar blok JSON.
+PROMPT;
+
+    $endpoint_url = "https://generativelanguage.googleapis.com/v1beta/models/{$config['gemini']['text_model']}:generateContent?key={$config['gemini']['api_key']}";
+    $payload = json_encode([
+        'contents' => [['role' => 'user', 'parts' => [['text' => $full_prompt]]]],
+        'generationConfig' => [ 'responseMimeType' => 'application/json' ]
+    ]);
+
+    $headers = ['Content-Type: application/json'];
+    $ch = curl_init($endpoint_url);
+    curl_setopt_array($ch, [CURLOPT_POST => 1, CURLOPT_POSTFIELDS => $payload, CURLOPT_HTTPHEADER => $headers, CURLOPT_RETURNTRANSFER => true, CURLOPT_TIMEOUT => 300]);
+    $response = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code == 200) {
+        $api_response = json_decode(trim($response), true);
+        if (isset($api_response['candidates'][0]['content']['parts'][0]['text'])) {
+            $json_string_from_api = $api_response['candidates'][0]['content']['parts'][0]['text'];
+            $result = json_decode($json_string_from_api, true);
+            if (json_last_error() === JSON_ERROR_NONE && isset($result['seo_title'], $result['meta_description'], $result['article_body'])) {
+                echo "<p>✅ Konten SEO berhasil dibuat dan di-parsing.</p>";
+                return $result;
+            }
+        }
+    }
+    echo "<p>❌ Gagal memproses atau mem-parsing respons dari Gemini. Kode: $http_code</p><pre>" . htmlspecialchars($response) . "</pre>";
+    return null;
+}
+
+
+function generate_and_save_image_gemini($keyword, $config) {
+    $full_image_prompt = $keyword . $config['content']['image_prompt_suffix'];
+    echo "<p>Prompt Gambar: \"{$full_image_prompt}\"</p>";
+    $endpoint_url = "https://generativelanguage.googleapis.com/v1beta/models/{$config['gemini']['image_model']}:generateContent?key={$config['gemini']['api_key']}";
+    $payload = json_encode([
+        'contents' => [['parts' => [['text' => $full_image_prompt]]]],
+        'generationConfig' => ['responseModalities' => ['TEXT', 'IMAGE']]
+    ]);
+    $headers = ['Content-Type: application/json'];
+    $ch = curl_init($endpoint_url);
+    curl_setopt_array($ch, [CURLOPT_POST => 1, CURLOPT_POSTFIELDS => $payload, CURLOPT_HTTPHEADER => $headers, CURLOPT_RETURNTRANSFER => true, CURLOPT_TIMEOUT => 180]);
+    $response = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code != 200) { echo "<p>❌ Gagal membuat gambar. Kode: $http_code</p><pre>" . htmlspecialchars($response) . "</pre>"; return null; }
+    
+    $result = json_decode($response, true);
+    $base64_image_data = null;
+    if (isset($result['candidates'][0]['content']['parts'])) {
+        foreach ($result['candidates'][0]['content']['parts'] as $part) {
+            if (isset($part['inlineData']['data'])) { $base64_image_data = $part['inlineData']['data']; break; }
+        }
+    }
+    
+    if ($base64_image_data) {
+        $image_data = base64_decode($base64_image_data);
+        if (!is_dir($config['output_dir'])) { mkdir($config['output_dir'], 0777, true); }
+        $file_name = slugify($keyword, 20) . '_' . rand(1000, 9999) . '.png';
+        $file_path = $config['output_dir'] . $file_name;
+        if (file_put_contents($file_path, $image_data)) {
+            echo "<p>✅ Gambar berhasil dibuat: {$file_path}</p>";
+            return $file_path;
+        }
+    }
+    echo "<p>❌ Respons API tidak berisi data gambar.</p>"; return null;
+}
+
+function upload_image_to_wordpress($image_path, $alt_text, $config) {
+    echo "<p>Mengunggah gambar dengan alt text '{$alt_text}'...</p>";
+    $api_url = $config['wp']['site_url'] . '/wp-json/wp/v2/media';
+    $credentials = base64_encode($config['wp']['username'] . ':' . $config['wp']['app_password']);
+    $file_content = file_get_contents($image_path);
+    $file_name = basename($image_path);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $api_url);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $file_content);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Authorization: Basic ' . $credentials,
+        'Content-Type: image/png',
+        'Content-Disposition: attachment; filename="' . $file_name . '"'
+    ]);
+    $response = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    if ($http_code == 201) {
+        $result = json_decode($response, true);
+        $media_id = $result['id'];
+        echo "<p>✅ Gambar diunggah (ID: {$media_id}). Menambahkan alt text...</p>";
+        $update_url = $api_url . '/' . $media_id;
+        $update_data = json_encode(['alt_text' => $alt_text, 'caption' => $alt_text]);
+        curl_setopt($ch, CURLOPT_URL, $update_url);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $update_data);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Authorization: Basic ' . $credentials, 'Content-Type: application/json']);
+        curl_exec($ch); curl_close($ch);
+        echo "<p>✅ Alt text ditambahkan.</p>";
+        return $media_id;
+    }
+    curl_close($ch);
+    echo "<p>❌ Gagal mengunggah gambar. Kode: $http_code</p><pre>" . htmlspecialchars($response) . "</pre>";
+    return null;
+}
+
+function get_or_create_tags($keyword, $config) {
+    echo "<p>Memproses tags...</p>";
+    $tag_ids = [];
+    $tag_names = array_unique(array_filter([$keyword] + explode(' ', $keyword)));
+    $credentials = base64_encode($config['wp']['username'] . ':' . $config['wp']['app_password']);
+    $headers = ['Authorization: Basic ' . $credentials, 'Content-Type: application/json'];
+    foreach ($tag_names as $tag_name) {
+        $tag_name = trim($tag_name);
+        if(empty($tag_name)) continue;
+        $api_url_search = $config['wp']['site_url'] . '/wp-json/wp/v2/tags?search=' . urlencode($tag_name);
+        $ch = curl_init($api_url_search);
+        curl_setopt_array($ch, [CURLOPT_RETURNTRANSFER => true, CURLOPT_HTTPHEADER => $headers]);
+        $tags = json_decode(curl_exec($ch), true); curl_close($ch);
+        $found_tag = null;
+        if (!empty($tags)) { foreach ($tags as $tag) { if (strtolower($tag['name']) == strtolower($tag_name)) { $found_tag = $tag; break; } } }
+        if ($found_tag) { $tag_ids[] = $found_tag['id']; }
+        else {
+            $api_url_create = $config['wp']['site_url'] . '/wp-json/wp/v2/tags';
+            $create_data = json_encode(['name' => $tag_name]);
+            $ch_create = curl_init($api_url_create);
+            curl_setopt_array($ch_create, [CURLOPT_POST => 1, CURLOPT_POSTFIELDS => $create_data, CURLOPT_RETURNTRANSFER => true, CURLOPT_HTTPHEADER => $headers]);
+            $new_tag = json_decode(curl_exec($ch_create), true); curl_close($ch_create);
+            if (isset($new_tag['id'])) { $tag_ids[] = $new_tag['id']; }
+        }
+    }
+    echo "<p>✅ Tag berhasil diproses.</p>"; return $tag_ids;
+}
+
+function post_to_wordpress($post_data, $config) {
+    echo "<p>Mengirim artikel ke WordPress...</p>";
+    $api_url = $config['wp']['site_url'] . '/wp-json/wp/v2/posts';
+    $payload = [
+        'title'    => $post_data['title'],
+        'content'  => $post_data['content'],
+        'status'   => 'publish',
+        'slug'     => $post_data['slug'],
+        'meta'     => [
+            '_yoast_wpseo_focuskw' => $post_data['keyword'],
+            '_yoast_wpseo_metadesc' => $post_data['meta_description'],
+            'rank_math_focus_keyword' => $post_data['keyword'],
+            'rank_math_description' => $post_data['meta_description']
+        ],
+    ];
+    if (!empty($config['wp']['category_id'])) { $payload['categories'] = [$config['wp']['category_id']]; }
+    if (!empty($post_data['tag_ids'])) { $payload['tags'] = $post_data['tag_ids']; }
+    if (!empty($post_data['featured_media_id'])) { $payload['featured_media'] = $post_data['featured_media_id']; }
+    $json_data = json_encode($payload);
+    $credentials = base64_encode($config['wp']['username'] . ':' . $config['wp']['app_password']);
+    $headers = ['Authorization: Basic ' . $credentials, 'Content-Type: application/json'];
+    $ch = curl_init($api_url);
+    curl_setopt_array($ch, [CURLOPT_POST => 1, CURLOPT_POSTFIELDS => $json_data, CURLOPT_HTTPHEADER => $headers, CURLOPT_RETURNTRANSFER => true, CURLOPT_TIMEOUT => 90]);
+    $response = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    if ($http_code == 201) {
+        $result = json_decode($response, true);
+        echo "<h2>✅ Artikel Berhasil Diposting!</h2>";
+        echo "<p><strong>Link:</strong> <a href='{$result['link']}' target='_blank'>{$result['link']}</a></p>";
+        return true;
+    }
+    echo "<h2>❌ Gagal Memposting Artikel</h2>";
+    echo "<p>Kode: $http_code</p><pre>" . htmlspecialchars($response) . "</pre>";
+    return false;
+}
+
+function add_to_history($keyword, $history_file) {
+    $timestamp = date('Y-m-d H:i:s');
+    file_put_contents($history_file, $timestamp . '|' . $keyword . PHP_EOL, FILE_APPEND);
+}
+
+function read_history($history_file) {
+    if (!file_exists($history_file)) return [];
+    $lines = file($history_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $history = [];
+    foreach ($lines as $line) {
+        $parts = explode('|', $line, 2);
+        if (count($parts) === 2) { $history[] = ['timestamp' => $parts[0], 'keyword' => $parts[1]]; }
+    }
+    return array_reverse($history);
+}
+
+function fetch_google_trends($google_trends_url, $output_file) {
+    echo "<h1>🚀 Memulai Pengambilan Google Trends</h1>";
+    $xml_content = @file_get_contents($google_trends_url);
+    if ($xml_content === false) { echo "❌ Gagal mengambil data dari Google Trends."; return false; }
+    echo "<p>✅ Berhasil mengambil data XML.</p>";
+    libxml_use_internal_errors(true);
+    $xml = simplexml_load_string($xml_content, "SimpleXMLElement", LIBXML_NOCDATA);
+    if ($xml === false) { echo "❌ Gagal mem-parsing XML."; return false; }
+    $trending_keywords = [];
+    if (isset($xml->channel->item)) { foreach ($xml->channel->item as $item) { $title = trim((string)$item->title); if (!empty($title)) { $trending_keywords[] = $title; } } }
+    if (empty($trending_keywords)) { echo "⚠️ Tidak ada tren ditemukan."; return false; }
+    file_put_contents($output_file, implode("\n", $trending_keywords));
+    echo "<hr><h2>✅ Berhasil! " . count($trending_keywords) . " tren disimpan ke <strong>" . htmlspecialchars($output_file) . "</strong>.</h2>";
+    return $trending_keywords;
+}
+
+function process_keyword($keyword, $config) {
+    echo "<hr><h3>Memproses Keyword: \"" . htmlspecialchars($keyword) . "\"</h3>";
+    $internal_link_options = get_latest_posts_for_internal_linking($config);
+    $generated_content = generate_seo_content_from_gemini($keyword, $internal_link_options, $config);
+    if (!$generated_content) { echo "<p>❌ Gagal membuat konten. Proses dihentikan.</p>"; return false; }
+    add_to_history($keyword, $config['history_file']);
+    $featured_media_id = null;
+    $local_image_path = generate_and_save_image_gemini($keyword, $config);
+    if ($local_image_path) {
+        $resized_image_path = $config['output_dir'] . 'resized_' . basename($local_image_path);
+        $upload_path = resize_image($local_image_path, $resized_image_path, $config['content']['image_width'], $config['content']['image_height']) ? $resized_image_path : $local_image_path;
+        $featured_media_id = upload_image_to_wordpress($upload_path, $keyword, $config); // Kriteria: Alt text
+        if (file_exists($local_image_path)) unlink($local_image_path);
+        if (file_exists($resized_image_path) && $upload_path === $resized_image_path) unlink($resized_image_path);
+    }
+    $post_data = [
+        'title'             => $generated_content['seo_title'],
+        'content'           => format_content_to_html($generated_content['article_body']),
+        'slug'              => slugify($generated_content['seo_title'], $config['content']['max_slug_length']), // Kriteria: URL & panjang URL
+        'keyword'           => $keyword, // Kriteria: Tetapkan Focus Keyword
+        'meta_description'  => $generated_content['meta_description'],
+        'tag_ids'           => get_or_create_tags($keyword, $config),
+        'featured_media_id' => $featured_media_id
+    ];
+    return post_to_wordpress($post_data, $config);
+}
+
+// ==========================================================
+// --- LOGIKA UTAMA APLIKASI & TAMPILAN HTML ---
+// ==========================================================
+
+$full_config = [
+    'wp' => $wp_config, 'gemini' => $gemini_config, 'content' => $content_config,
+    'output_dir' => $image_output_dir, 'history_file' => $history_file,
+    'progress_file' => $progress_file, 'keyword_file' => $keyword_file,
+    'google_trends_url' => $google_trends_url
+];
+
+if (empty($_POST)) {
+    $history = read_history($full_config['history_file']);
+    // Tampilan UI utama (Interface)
+    echo <<<HTML
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto-Post WordPress SEO dengan Gemini</title>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 0 20px; background-color: #f4f6f8; color: #333; }
+    .container { background-color: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: 20px; }
+    h1, h2, h3 { color: #2c3e50; } h1 { border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+    .form-group { margin-bottom: 20px; } label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+    input[type="text"] { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    button { background-color: #3498db; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s; }
+    button:hover { background-color: #2980b9; } button.secondary { background-color: #2ecc71; } button.secondary:hover { background-color: #27ae60; }
+    button.tertiary { background-color: #e67e22; } button.tertiary:hover { background-color: #d35400; }
+    .history-item { padding: 15px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+    .history-item:last-child { border-bottom: none; } .timestamp { color: #7f8c8d; font-size: 0.9em; }
+    .tabs { display: flex; margin-bottom: -1px; } .tab { padding: 10px 20px; cursor: pointer; background: #f5f5f5; border: 1px solid #ddd; border-bottom: none; border-radius: 4px 4px 0 0; }
+    .tab.active { background: #fff; border-bottom: 1px solid #fff; font-weight: bold; }
+    .tab-content { display: none; padding: 20px; border: 1px solid #ddd; border-top: none; background: #fff; } .tab-content.active { display: block; }
+    p { margin: 0 0 10px; } ol { padding-left: 20px; } li { margin-bottom: 5px; }
+</style>
+</head><body><div class="container">
+<h1>Auto-Post WordPress SEO</h1>
+<div class="tabs">
+    <div class="tab active" onclick="switchTab(event, 'manual')">Input Manual</div>
+    <div class="tab" onclick="switchTab(event, 'auto')">Proses Otomatis</div>
+    <div class="tab" onclick="switchTab(event, 'trends')">Ambil Tren</div>
+</div>
+<div id="manual" class="tab-content active"><form method="post" action="">
+    <div class="form-group"><label for="keyword">Masukkan Keyword Tunggal:</label><input type="text" id="keyword" name="keyword" required placeholder="Contoh: Manfaat teh hijau"></div>
+    <button type="submit">🚀 Generate & Post Artikel</button></form></div>
+<div id="auto" class="tab-content"><form method="post" action="">
+    <p>Proses otomatis akan mengambil <strong>satu keyword</strong> dari file <code>{$full_config['keyword_file']}</code> berdasarkan progres terakhir.</p>
+    <p>Dirancang untuk dijalankan via <strong>cron job</strong> setiap beberapa menit/jam.</p>
+    <div class="form-group"><button type="submit" name="process_file" class="secondary">⚙️ Proses Satu Keyword dari File</button></div></form></div>
+<div id="trends" class="tab-content"><form method="post" action="">
+    <p>Ambil tren terbaru dari Google Trends Indonesia dan timpa isi file <code>{$full_config['keyword_file']}</code>.</p>
+    <div class="form-group"><button type="submit" name="fetch_trends" class="tertiary">🔥 Ambil Tren Google</button></div></form></div>
+<h2>Riwayat Proses Terakhir</h2><div class="history-list">
+HTML;
+    if (!empty($history)) {
+        foreach (array_slice($history, 0, 10) as $item) {
+            echo '<div class="history-item"><div>' . htmlspecialchars($item['keyword']) . '</div><div class="timestamp">' . htmlspecialchars($item['timestamp']) . '</div></div>';
+        }
+    } else { echo '<p>Belum ada riwayat.</p>'; }
+    echo '</div></div><script>
+        function switchTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+            document.getElementById(tabName).style.display = "block"; evt.currentTarget.className += " active";
+        }
+    </script></body></html>';
+    exit;
+}
+
+// --- ROUTING AKSI POST ---
+
+echo '<!DOCTYPE html><html><head><title>Processing...</title><style>body { font-family: monospace; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } a { color: #3498db; } pre { background-color: #2d2d2d; color: #fff; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-break: break-all; } h1, h2, h3 { color: #2c3e50; } ol { padding-left: 20px; } li { margin-bottom: 5px; } </style></head><body>';
+echo '<h1>🚀 Auto-Post WordPress Dimulai</h1><p>Waktu: ' . date('Y-m-d H:i:s') . '</p>';
+if (isset($_POST['fetch_trends'])) {
+    $fetched_keywords = fetch_google_trends($full_config['google_trends_url'], $full_config['keyword_file']);
+    if ($fetched_keywords) {
+        echo "<h3>Daftar Tren yang Disimpan:</h3><ol>";
+        foreach ($fetched_keywords as $keyword) { echo "<li>" . htmlspecialchars($keyword) . "</li>"; }
+        echo "</ol>";
+    }
+} elseif (isset($_POST['keyword'])) {
+    $keyword = trim($_POST['keyword']);
+    if (empty($keyword)) die("<p>❌ Error: Keyword tidak boleh kosong.</p>");
+    process_keyword($keyword, $full_config);
+} elseif (isset($_POST['process_file'])) {
+    $keyword_file = $full_config['keyword_file'];
+    $progress_file = $full_config['progress_file'];
+    if (!file_exists($keyword_file)) { die("<p>❌ Error: File '$keyword_file' tidak ditemukan.</p>"); }
+    $keywords = file($keyword_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    if (empty($keywords)) { die("<p>❌ Error: File '$keyword_file' kosong.</p>"); }
+    $current_index = file_exists($progress_file) ? (int)file_get_contents($progress_file) : 0;
+    if ($current_index >= count($keywords)) {
+        echo "<h2>🎉 Selamat! Semua kata kunci telah selesai diproses.</h2>";
+        file_put_contents($progress_file, 0); echo "<p>Progres telah direset.</p>";
+    } else {
+        if ($current_index > 0) { echo "<p>Memberi jeda 20 detik untuk menghindari limit kuota...</p>"; sleep(20); }
+        $keyword = $keywords[$current_index];
+        if (process_keyword($keyword, $full_config)) {
+            file_put_contents($progress_file, $current_index + 1);
+            echo "<p>✅ Progres diperbarui ke indeks " . ($current_index + 1) . ".</p>";
+        } else { echo "<p>⚠️ Progres tidak diperbarui karena proses keyword gagal.</p>"; }
+    }
+}
+echo '<hr><p><a href="' . htmlspecialchars($_SERVER['PHP_SELF']) . '">Kembali ke Form Input</a></p></body></html>';
+?>
